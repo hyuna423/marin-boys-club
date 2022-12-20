@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'netmarbleB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  /* 메인 h1 적용 */
+}
+
+@font-face {
+  font-family: 'locus_sangsang';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +27,14 @@ address {
   font-style: normal;
 }
 
+body {
+  font-family: 'locus_sangsang';
+  overflow-x: hidden;
+}
+
+h1{
+  font-family: 'netmarbleB';
+}
 
 
 h3 {
@@ -19,10 +42,6 @@ h3 {
   font-weight: 600;
   margin-bottom: 30px;
   color: #fff;
-}
-
-body {
-  overflow-x: hidden;
 }
 
 @media (min-width:1460px) {
@@ -289,6 +308,18 @@ body {
   top: -60px;
   left: 50%;
   transform: translateX(-50%);
+
+  /* 애니메이션 */
+  animation: simbol 1s linear infinite;
+}
+
+@keyframes simbol{
+  0%,100% {
+    top:-60px;
+  }
+  50%{
+    top:-70px;
+  }
 }
 
 #roadmap .roadmap_area h3::before{
