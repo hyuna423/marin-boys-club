@@ -237,7 +237,7 @@ h3 {
 }
 
 #inspiratrions .insp_bg {
-  width: 6400px;
+  width: 99400px;
   height: 16px;
   background: url(../img/line_bg_blue.png)repeat-x;
   position: absolute;
@@ -245,17 +245,17 @@ h3 {
   bottom: -1px;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  animation: iteration-count 200s linear infinite alternate;
+  animation: iteration-count 260s linear infinite alternate;
 
 }
 
 @-webkit-keyframes iteration-count {
-  0% {
+  0% , 100%{
     left: 0;
   }
 
-  100% {
-    left: -11600px;
+  50% {
+    left: -6400px;
   }
 }
 
