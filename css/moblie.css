@@ -25,7 +25,16 @@
 
 
 /*아이패드 (768px)*/
-@media screen and (max-width:991px) {}
+@media screen and (max-width:991px) {
+  #roadmap .road_card .card h4 {
+    width: 33%;
+}
+
+
+#roadmap .road_card .card.box1::before,  #roadmap .road_card .card.box2::before, #roadmap .road_card .card.box3::before, #roadmap .road_card .card.box4::before {
+  width: 160px;
+  height: 160px;}
+}
 
 
 
@@ -62,6 +71,11 @@
   #roadmap .road_box>div {
     width: 100%;
   }
+
+  #roadmap .road_card .card.box1::before,  #roadmap .road_card .card.box2::before, #roadmap .road_card .card.box3::before, #roadmap .road_card .card.box4::before {
+    width: 200px;
+    height: 200px;}
+  
 }
 
 
@@ -91,9 +105,15 @@
     width: 100%;
   }
 
+  
   #roadmap .road_card .card.box1::before,  #roadmap .road_card .card.box2::before, #roadmap .road_card .card.box3::before, #roadmap .road_card .card.box4::before {
     width: 160px;
     height: 160px;}
+
+    #roadmap .roadmap_area .road_box .road_card ul{
+      width: 70%;
+    }
+
 }
 
 
