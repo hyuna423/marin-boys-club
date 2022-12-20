@@ -300,6 +300,18 @@ body {
   top: -110px;
   left: 52%;
   transform: scaleX(-1);
+
+  /* 애니메이션 */
+  animation: up 3s linear infinite;
+}
+
+@keyframes up{
+  0%,100% {
+    top:-110px;
+  }
+  50%{
+    top:-125px;
+  }
 }
 
 #roadmap .roadmap_area .road_box {
