@@ -358,7 +358,7 @@ h3 {
 }
 
 #roadmap .road_box>div {
-  width: 44.44%;
+    width: 47.44%;
 }
 
 #roadmap .road_card .card {
@@ -373,6 +373,7 @@ h3 {
   transition: 0.4s;
   cursor: url(../img/cursor.png), auto;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 #roadmap .road_card .card:hover{
