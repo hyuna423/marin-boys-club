@@ -98,6 +98,7 @@ body {
 
 .swiper-slide img{
   max-height: 100%;
+  -webkit-user-drag : none;
 } 
 
 .gallery_button{
