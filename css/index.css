@@ -210,6 +210,10 @@ footer{
   width: 100%;
 }
 
+.email {
+  margin-bottom: 0 !important;
+}
+
 .f_cont_left_info h5{
   font-size: 1.1em;
   font-weight: bold;
