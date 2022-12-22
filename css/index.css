@@ -260,4 +260,5 @@ footer{
 
 .footer_cont_right a:hover{
   background-color: #0194E4;
+  box-shadow: 0 0 9px #0194E4;
 }
