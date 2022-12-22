@@ -149,15 +149,11 @@ header{
 .pc_menu ul li{
   display: flex;
   align-items: center;
+  color: #222;
 }
 .pc_menu ul li a{
-  color: #222;
   font-weight: 400;
   text-decoration: none;
-  transition: all .1s ease-in-out;
-}
-.pc_menu ul li a:hover {
-  font-weight: 700;
 }
 .login_menu {
   width: 20%;
@@ -172,11 +168,17 @@ header{
 }
 .lan_page{
   background-color: #fff;
+  color: #222;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0 2%;
+  padding: 2% 2%;
   border-radius: 20px;
-  transition: all .1s ease-in-out;
   cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+.lan_page:hover {
+  background-color: #18a3e8;
+  color: #fff;
+  text-decoration: none;
 }
 ._page:hover{
   background-color: #0e0e0e;
@@ -212,6 +214,7 @@ header{
   position: relative;
   width: 40px;
   height: 35px;
+  cursor: pointer;
 }
 .menu-trigger span {
   position: absolute;
@@ -255,6 +258,8 @@ header{
   z-index: 120;
   text-align: center;
   border-radius: 10px;
+  border: 5px solid #fff;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
 }
 .m_menu_wrap ul {
   padding: 6% 0 7%;
@@ -343,7 +348,7 @@ header{
 
 #home .Home_wrap {
   width: 100%;
-  height: 0;
+  height: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -351,21 +356,20 @@ header{
   position: absolute;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 /* 홈 갤러리 */
 .wrap {
-  width:30%;
+  width:50%;
   overflow:hidden;
-  
 }
 .swiper-container {
-  width:90%;
+  width:100%;
   margin:0 auto;
   overflow:hidden;
-  height:400px;
+  height:500px;
 }
-
 .swiper-slide {
   display:flex;
   justify-content:center;
@@ -373,13 +377,12 @@ header{
   width:150px;
   transition:none;
 }
-
 .swiper-slide .cont {
   text-align:center;
+  width: 100%;
 }
-
 .swiper-slide img {
-  max-width:90%;
+  max-width:100%;
   display:block;
   margin: 0 auto;
 }
@@ -387,7 +390,6 @@ header{
   display:inline-block;
   margin-top:20px;
 }
-
 .changing,
 .changed {  
   transform:translateX(-100px);
@@ -397,47 +399,39 @@ header{
   -webkit-user-select: none;
   user-select: none;
 }
-
 .changing {
   transition:transform 0.3s;
   pointer-events:none;
 }
-
 .changed {  
   transition:none;
 }
-
 .changing.swiper-slide-active,
 .changed.swiper-slide-active {
   transform:translateX(0);
 }
-
 .swiper-slide-active ~ .changing,
 .swiper-slide-active ~ .changed {
   transform:translateX(100px);
 }
-
 .changing .img-wrap,
 .changed .img-wrap {
   transform-origin:center bottom;
 }
-
 .changing .img-wrap {
   transition:transform 0.3s;
 }
-
 .changed .img-wrap {  
   transition:none;
 }
-
 .changing.swiper-slide-active .img-wrap,
 .changed.swiper-slide-active .img-wrap {
-  transform:scale(1.76);
+  transform:scale(2.3);
 }
 
 /* 인포 글 */
 #home .home_info {
-  width: 50%;
+  width: 35%;
 }
 .home_info h1 {
   color: #1A4899;
@@ -510,6 +504,24 @@ header{
   opacity: 0.6;
 }
 #about::after {
+  position: absolute;
+  content: '';
+  background: url(../img/line_bg.png) bottom no-repeat;
+  width: 100%;
+  height: 10%;
+  bottom: -1px;
+
+  animation-timing-function:ease-in-out;
+  animation: compare 2s infinite alternate;
+}
+#about .about_bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  left:0px;
+}
+#about .about_bg::after {
   content: '';
   background: url(../img/Frame3.png) no-repeat;
   width: 30%;
@@ -521,20 +533,15 @@ header{
   transform: rotate( -85deg );
   opacity: 0.6;
 }
-#about .about_bg {
-  position: relative;
-  width: 100%;
-  height: 100%;
+@-webkit-keyframes compare{
+  from{
+    left:-30px;
+  }
+  to{
+    left:30px;
+  }
 }
-#about .about_bg::after {
-  position: absolute;
-  content: '';
-  background: url(../img/line_bg.png) bottom no-repeat;
-  width: 100%;
-  height: 10%;
-  bottom: 0;
-  left: 0;
-}
+
 #about .about_wrap .about_info {
   text-align: center;
   margin-bottom: 6%;
@@ -552,7 +559,8 @@ header{
 
 /* about_card */
 #about .about_card {
-
+  display: flex;
+  justify-content: space-evenly;
 }
 #about .about_card img {
     border-radius: 2%;
@@ -562,28 +570,24 @@ header{
 }
 #about .about_card>div{display: inline-block;}
 #about .about_card .abcard1 {
-  position: absolute;
   left: 15%;
   transform: rotate(-13deg);
   z-index: 10;
   transition: all .3s ease-in-out;
 }
 #about .about_card .abcard2 {
-  position: absolute;
   left: 32%;
   transform: rotate(12deg);
   z-index: 10;
   transition: all .3s ease-in-out;
 }
 #about .about_card .abcard3 {
-  position: absolute;
   left: 51%;
   transform: rotate(-13deg);
   z-index: 10;
   transition: all .3s ease-in-out;
 }
 #about .about_card .abcard4 {
-  position: relative;
   left: 75%;
   transform: rotate(12deg);
   z-index: 10;
@@ -615,3 +619,5 @@ header{
   color: #1A4899;
   text-decoration: none;
 }
+
+/* 어바웃 파도 */

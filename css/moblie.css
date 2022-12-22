@@ -1,23 +1,11 @@
 /*데탑*/
 @media screen and (max-width:1440px) {
-
-  /* 메뉴 */
-  .pc_menu {
-    width: 60%;
+  /* home */
+  .changing.swiper-slide-active .img-wrap, .changed.swiper-slide-active .img-wrap {
+    transform: scale(3.3);
   }
-
-  /* 홈 */
-  .home_wrap {
-    padding: 30% 10%;
-  }
-
-  .home_contents p.main_title {
-    font-size: 2.5em;
-  }
-
-  /* 푸터 */
-  .footer_area {
-    padding: 0;
+  #home .home_info {
+    width: 45%;
   }
 }
 
@@ -25,154 +13,46 @@
 
 /*노트북*/
 @media screen and (max-width:1024px) {
-  h3 {
-    font-size: 2em;
+  /* home */
+  .home_info h1 {
+    font-size: 4rem;
   }
-
-  /* 메뉴 */
-  .pc_menu {
-    width: 80%;
-  }
-
-  /* 홈 */
-  #Home {
-    height: 850px;
-  }
-
-  /* 푸터 */
-  .f_right img {
-    max-width: 70%;
-  }
-
-  /*platform  */
-
-  #platform {
-    padding: 20% 0;
-  }
-
-
-  /*roadmap*/
-
-  .roadmap_content {
-    width: 60%;
-  }
-
-  .rdmp_line br {
-    display: none;
-  }
-
-  .roadmap_content.mobile::after {
-    top: -1%;
-  }
-
-  .roadmap_line_first .rdmp_line_right::after,
-  .roadmap_line_third .rdmp_line_right::after,
-  .roadmap_line_fifth .rdmp_line_right::after {
-    width: 69.78%;
-  }
-
-  .roadmap_line_second .rdmp_line_left::after,
-  .roadmap_line_fourth .rdmp_line_left::after,
-  .roadmap_line_sixth .rdmp_line_left::after {
-    width: 69.78%;
-  }
-
-
-  /*contact*/
-
-  .contact_content form textarea {
-    height: 300px;
-  }
-
-
-  .contact_content form input.name,
-  .contact_content form input.email {
-    margin-bottom: 2%;
-  }
-
-  .contact_content form textarea {
-    margin-bottom: 2%;
-  }
-
-
-
 }
 
 
 
 /*아이패드 (768px)*/
 @media screen and (max-width:991px) {
-
-  /* 푸터 */
-  .footer_center {
-    flex-direction: column;
+  /* home */
+  #home .Home_wrap {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  #home .Home_wrap {
+    height: 100%;
+  }
+  .swiper-container {
+    height: 350px;
   }
 
-
-
-  /* ecosystem */
-  #ecosystem .ecosystem_top ol li p {
-    width: 100%;
+  .changing.swiper-slide-active .img-wrap, .changed.swiper-slide-active .img-wrap {
+    transform: scale(2.3);
   }
-
-  /*roadmap*/
-
-  .roadmap_content {
-    width: 70%;
-  }
-
-
-  .roadmap_line_first .rdmp_line_right::after,
-  .roadmap_line_third .rdmp_line_right::after,
-  .roadmap_line_fifth .rdmp_line_right::after {
-    width: 67%;
-  }
-
-  .roadmap_line_second .rdmp_line_left::after,
-  .roadmap_line_fourth .rdmp_line_left::after,
-  .roadmap_line_sixth .rdmp_line_left::after {
-    width: 67%;
-  }
-
-  /*contact*/
-
-
-
-  .contact_content form input.name,
-  .contact_content form input.email {
+  .wrap {
     width: 80%;
   }
 
-  .contact_content form textarea {
+  #home .home_info {
     width: 80%;
-    height: 250px;
+    margin-bottom: 2%;
   }
-
-  .contact_content form input.send {
-    width: 50%;
+  .home_info h1 {
+    text-align: center;
   }
-
-  .footer_area .footer_center>div {
-    width: 100%;
-    margin-bottom: 3%;
-}
-
-.footer_area .footer_center .f_center {
-  margin-left: 0;
-}
-  .footer_center .white_pp {
-    margin: 2% 0;
-    width: 20%;
+  .home_info p {
+    text-align: center;
   }
-
-  .f_right {
-    margin-top: 2%;
-  }
-
-  .footer_area .footer_center .f_right {
-    justify-content: flex-start;
-  }
-
 }
 
 
@@ -180,113 +60,20 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
-
-  /* 모바일 메뉴 전환 */
-  .pc_menu {
-    display: none;
+  /* home */
+  .swiper-container {
+    height: 350px;
   }
 
-  .m_menu {
-    display: block;
+  .changing.swiper-slide-active .img-wrap, .changed.swiper-slide-active .img-wrap {
+    transform: scale(2.7);
+  }
+  .wrap {
+    width: 80%;
   }
 
-  .links a.btn-hover {
-    width: 26%;
-    padding: 1.5%;
-  }
-
-  .m_menu {
-    top: 30px;
-}
-
-  /* 홈 버튼 */
-  .links {
-    margin-top: 10%;
-  }
-
-  /* 푸터 */
-  footer {
-    padding: 10% 0;
-  }
-
-  .footer_center .white_pp {
-    width: 40%;
-  }
-
-  /* ecosystem */
-  #ecosystem .ecosystem_bottom::before {
-    width: 63%;
-    top: -12%;
-  }
-
-  #ecosystem .ecosystem_bottom .bottom_box .bottom_text ul {
-    flex-direction: column;
-  }
-
-  #ecosystem .ecosystem_bottom .bottom_box .bottom_text ul li {
-    width: 100%;
-    padding: 10% 0;
-  }
-
-  #ecosystem .ecosystem_bottom .bottom_box .bottom_text ul li:nth-child(2) {
-    border-right: none;
-    border-left: none;
-    border-top: 1px solid #BEBEBE;
-    border-bottom: 1px solid #BEBEBE;
-
-  }
-
-  /*   #ecosystem_02  */
-
-  #ecosystem_02 .ecosystem_02_area p br {
-    display: none;
-  }
-
-  #ecosystem_02 .ecosystem_02_area p br.must {
-    display: block;
-  }
-
-  /*platform  */
-
-  #platform .platform_area {
-    flex-direction: column;
-  }
-
-  #platform .platform_area .platform_txt {
-    width: 100%;
-  }
-
-  #platform .platform_area .platform_img {
-    width: 100%;
-    padding: 28% 0 10% 0;
-  }
-
-
-  /*roadmap*/
-
-  .roadmap_content {
-    width: 100%;
-  }
-
-  /*contact*/
-
-
-  .contact_content form input.name,
-  .contact_content form input.email {
-    width: 100%;
-    margin-bottom: 3%;
-    padding: 2%;
-  }
-
-  .contact_content form textarea {
-    width: 100%;
-    margin-bottom: 3%;
-    padding: 2%;
-  }
-
-  .contact_content form input.send {
-    width: 60%;
-    padding: 1.8%;
+  #home .home_info {
+    margin-bottom: 0;
   }
 }
 
@@ -295,82 +82,21 @@
 
 
 @media screen and (max-width:576px) {
-
-  h3 {
-    font-size: 1.8em;
+  /* home */
+  #home .home_info {
+    width: 98%;
   }
-
-  /* 홈 글씨 */
-  .home_contents p.main_subtitle {
-    font-size: 1.3em;
-    font-weight: bold;
+  .home_info h1 {
+    font-size: 3.3rem;
   }
-
-  .home_contents p.main_info {
-    font-size: 0.9em
+  .home_info p {
+    font-size: 0.9rem;
   }
-
-  
-  /* 홈 링크 버튼 */
-  .links {
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
+  .swiper-container {
+    height: 300px;
   }
-
-  .links a {
-    margin-bottom: 5%;
-    margin-right: 0;
-    text-align: center;
-  }
-
-  /* ecosystem */
-
-  #ecosystem .ecosystem_bottom::before {
-    width: 63%;
-    top: -9%;
-  }
-
-  /*   #ecosystem_02  */
-
-  #ecosystem_02 .ecosystem_02_area h4,
-  #ecosystem .ecosystem_top ol li h4 {
-    font-size: 20px;
-  }
-
-  #ecosystem_02 .ecosystem_02_area {
-    width: 90%;
-  }
-
-  p {
-    font-size: 14px;
-  }
-
-  /*platform  */
-
-  #platform .platform_area .platform_txt p.btn span {
-    max-width: 180%;
-  }
-
-
-  /*roadmap*/
-
-  .roadmap_content {
-    margin-top: 20%;
-  }
-
-
-
-  .roadmap_line_first .rdmp_line_right::after,
-  .roadmap_line_third .rdmp_line_right::after,
-  .roadmap_line_fifth .rdmp_line_right::after {
-    width: 59.5%;
-  }
-
-  .roadmap_line_second .rdmp_line_left::after,
-  .roadmap_line_fourth .rdmp_line_left::after,
-  .roadmap_line_sixth .rdmp_line_left::after {
-    width: 59.5%;
+  .changing.swiper-slide-active .img-wrap, .changed.swiper-slide-active .img-wrap {
+    transform: scale(3);
   }
 }
 
@@ -379,41 +105,18 @@
 /*모바일3 갤럭시*/
 
 @media screen and (max-width:425px) {
-
-  /* ecosystem */
-
-  #ecosystem .ecosystem_bottom .bottom_box .bottom_text ul li img {
-    width: 25%;
+/* home */
+  .swiper-container {
+    height: 280px;
   }
-
-  #ecosystem .ecosystem_bottom::before {
-    width: 70%;
-    top: -8%;
+  .changing.swiper-slide-active .img-wrap, .changed.swiper-slide-active .img-wrap {
+    transform: scale(3.8);
   }
-
-  /*platform  */
-  #platform .platform_area .platform_txt p.btn span {
-    max-width: 150%;
-  }
-
-  h3 {
-    font-size: 1.5em;
-  }
-
 }
 
 
 
 /*모바일4 아이폰*/
 @media screen and (max-width:375px) {
-
-  /* 홈 */
-  .home_wrap {
-    padding: 50% 10%;
-  }
-
-  .home_contents p.main_info {
-    font-size: 0.75em
-  }
 
 }
