@@ -220,6 +220,12 @@ footer{
   margin-bottom:7%;
 }
 
+
+.f_cont_left_info span{
+  font-weight: 600 !important;
+}
+
+
 .footer_cont_right{
   width: 30%;
   display: flex;

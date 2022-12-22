@@ -27,6 +27,7 @@ var swiper = new Swiper(".mySwiper", {
 
 const slide = document.querySelector('.swiper-container');
 
+
 slide.addEventListener('mouseover', () => {
     swiper.autoplay.stop();
 });
