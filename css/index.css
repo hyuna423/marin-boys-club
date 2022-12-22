@@ -220,6 +220,9 @@ footer{
   margin-bottom:7%;
 }
 
+.f_cont_left_info p{
+  font-size: 0.8em;
+}
 
 .f_cont_left_info span{
   font-weight: 600 !important;
