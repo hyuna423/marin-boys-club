@@ -16,23 +16,29 @@
   <!--css-->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  
+  <link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css'>
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/moblie.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
+  
   <!--favicon--->
   <link href="img/favicon.ico" rel="icon">
   <link href="img/favicon.ico" rel="apple-touch-icon">
-
+  
   <!--js-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.1/swiper-bundle.min.js'></script>
+  
   <script src="js/jquery-3.6.1.min.js"></script>
   <script src="js/menu_scroll.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <link rel="stylesheet" href="js/home_swiper.js">
 </head>
 
 
@@ -41,35 +47,43 @@
 
   <header>
 
-    <div class="">
+    <div class="hd_all container">
 
       <hgroup>
 
-        <h1><a href=""><img src="" alt=""></a></h1>
+        <h1><a href="./index.html"><img src="img/main_logo.png" alt="logo"></a></h1>
 
       </hgroup>
 
 
-      <nav class="">
+      <nav class="pc_menu">
         <ul>
 
-          <li><a href="#" class="scroll"></a></li>
-          <li><a href="#" class="scroll"></a></li>
-          <li><a href="#" class="scroll"></a></li>
-          <li><a href="#" class="scroll"></a></li>
-          <li><a href="#" class="scroll"></a></li>
-          <li class=""><a href=""></a></li>
+          <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#about" class="scroll">ABOUT</a></li>
+          <li><a href="#inspirations" class="scroll">INSPIRATIONS</a></li>
+          <li><a href="#roadmap" class="scroll">ROADMAP</a></li>
+          <li><a href="#gallery" class="scroll">GALLERY</a></li>
 
-        </ul>
+          <div class="login_menu">
+          <li class="login"><a href="./index_eng.html">로그인</a></li>
+          <div class="line"></div>
+          <li class="sign"><a href="./index_eng.html">회원가입</a></li>
+          </div>
+
+          <li class="lan_page"><a href="./index_eng.html">Eng &#9660;</a></li>
+        </div>
+        
+      </ul>
       </nav>
 
 
       <!--반응형-->
 
-      <div class="">
+      <div class="m_menu">
 
         <!-- <img src="img/.png" alt="menu_button"> -->
-        <div class="">
+        <div class="menu-trigger">
           <span></span>
           <span></span>
           <span></span>
@@ -77,16 +91,23 @@
 
       </div>
 
-      <nav class="">
+      <nav class="m_menu_wrap">
 
         <ul>
 
-          <li><a href="#" class="scroll"></a></li>
-          <li><a href="#" class="scroll"></a></li>
-          <li><a href="#" class="scroll"></a></li>
-          <li><a href="#" class="scroll"></a></li>
-          <li><a href="#" class="scroll"></a></li>
-          <li class=""><a href=""><img src="" alt=""></a></li>
+          <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#about" class="scroll">ABOUT</a></li>
+          <li><a href="#inspirations" class="scroll">INSPIRATIONS</a></li>
+          <li><a href="#roadmap" class="scroll">ROADMAP</a></li>
+          <li><a href="#gallery" class="scroll">GALLERY</a></li>
+
+          <div class="login_menu">
+            <div class="line"></div>
+            <li class="login"><a href="">로그인</a></li>
+            <li class="sign"><a href="">회원가입</a></li>
+          </div>
+
+          <li class="lan_page"><a href="./index_eng.html">Eng &#9660;</a></li>
         </ul>
 
       </nav>
@@ -96,8 +117,8 @@
       <!--반응형 js-->
       <script type="text/javascript">
         $(function () {
-          $(".").click(function () {
-            $(".").animate({ width: "" }, 250);
+          $(".menu-trigger").click(function () {
+            $(".m_menu_wrap").animate({ width: "toggle" }, 250);
           });
         });
 
@@ -106,11 +127,101 @@
   </header>
 
   <main>
+
+    <!-- Home 시작 -->
     <section id="home">
+      <div class="Home_bg"></div>
+
       <div class="ocean">
         <div class="wave"></div>
         <div class="wave"></div>
       </div>
+
+        <div class="Home_wrap">
+          
+          <div class="wrap">
+            <div class="swiper-container mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="cont">
+                    <div class="img-wrap">
+                      <img src="img/3. Marine Marlin Boy.gif" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cont">
+                    <div class="img-wrap">
+                      <img src="img/4. Marine Anglerfish Boy.gif" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cont">
+                    <div class="img-wrap">
+                      <img src="img/5. Marine Dumbo Octopus Boy.gif" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cont">
+                    <div class="img-wrap">
+                      <img src="img/11. Marine Mark V Boy.gif" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="cont">
+                    <div class="img-wrap">
+                      <img src="img/22. Marine Clownfish Boy.gif" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="home_info">
+            <h1>Marine <br> Boys Club</h1>
+            <p>마린보이즈클럽 소개 문구 마린보이즈클럽 소개 <br>
+              마린보이즈클럽 소개 문구 마린보이즈클럽 소개 <br>
+              마린보이즈클럽 소개 문구 마린보이즈클럽 소개 </p>
+          </div>
+        </div>
+
+        <!-- 플랫폼 버튼 -->
+        <div class="platform_btn">
+          <a href=""><img src="./img/arrow-up.svg"></img></a>
+        </div>
+
+    </section><!-- Home 끝 -->
+
+    <!-- About 시작 -->
+    <section id="about">
+      <div class="about_bg">
+
+      <div class="about_wrap container">
+
+        <div class="about_info">
+          <h3>ABOUT</h3>
+          <p class="abinfo_title">마린보이즈클럽 프로젝트 정보</p>
+          <p>마린보이즈 클럽 프로젝트 정보 마린보이즈 클럽 프로젝트 정보<br>
+            마린보이즈 클럽 프로젝트 정보 마린보이즈 클럽 프로젝트 정보<br>
+            마린보이즈 클럽 프로젝트 정보 마린보이즈 클럽 프로젝트 정보<br></p>
+        </div>
+        <div class="about_card">
+          <div class="abcard1"><img src="img/abcard1.jpg" alt="1"></div>
+          <div class="abcard2"><img src="img/abcard2.jpg" alt="2"></div>
+          <div class="abcard3"><img src="img/abcard3.jpg" alt="3"></div>
+          <div class="abcard4"><img src="img/abcard4.jpg" alt="4"></div>
+        </div>
+
+        <div class="ablinks">
+          <a href="" class="about-btn">View More +</a>
+        </div>
+      </div>
+    </div>
+      <!-- <img src="img/line_bg.png"> -->
     </section>
 
   </main>
@@ -119,7 +230,7 @@
 
   </footer>
 
-
+<!-- partial -->
 </body>
 
 
