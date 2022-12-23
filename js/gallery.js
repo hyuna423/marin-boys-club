@@ -4,7 +4,7 @@
 
 /*swiper*/
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".swiper-container", {
     autoplay: {
     delay: 0,
     stopOnLastSlide: false,
