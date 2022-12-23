@@ -17,4 +17,10 @@ var swiper = new Swiper(".mySwiper", {
       $('.swiper-slide').addClass('changed');
     }
   },
+  pagination: {
+    //페이지 기능
+    el: '.swiper-pagination',
+    //클릭 가능여부
+    clickable: true,
+  }
 });

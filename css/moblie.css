@@ -13,9 +13,24 @@
 
 /*노트북*/
 @media screen and (max-width:1024px) {
+  /* header */
+  .pc_menu {
+    width: 100%;
+    float: right;
+  }
   /* home */
   .home_info h1 {
     font-size: 4rem;
+  }
+  #home .platform_btn img {
+    padding: 6% 0px;
+  }
+  /* about */
+  #about {
+    height: 93vh;
+  }
+  #about .about_card {
+    padding: 0 10%;
   }
 }
 
@@ -23,6 +38,24 @@
 
 /*아이패드 (768px)*/
 @media screen and (max-width:991px) {
+   /* 모바일 메뉴 전환 */
+   .pc_menu{
+    display: none;
+  }
+  .m_menu{
+    display: block;
+  }
+  .links a.btn-hover{
+    width: 26%;
+    padding: 1.5%;
+  }
+  .m_menu{
+    top: 30%;
+  }
+  .m_menu_wrap {
+    width: 45%;
+  }
+
   /* home */
   #home .Home_wrap {
     flex-direction: column-reverse;
@@ -53,6 +86,13 @@
   .home_info p {
     text-align: center;
   }
+    /* about */
+    #about {
+      height: 82vh;
+    }
+    #about .about_card {
+      padding: 0;
+    }
 }
 
 
@@ -60,21 +100,42 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
+  /* header */
+  .m_menu_wrap {
+    width: 65%;
+  }
+  .m_menu_wrap ul li a {
+    font-size: 1.2em;
+}
+
   /* home */
   .swiper-container {
     height: 350px;
   }
-
   .changing.swiper-slide-active .img-wrap, .changed.swiper-slide-active .img-wrap {
     transform: scale(2.7);
   }
   .wrap {
     width: 80%;
   }
-
   #home .home_info {
     margin-bottom: 0;
   }
+  #home .platform_btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* about */
+  #about {
+    height: 72vh;
+  }
+  #about .about_card img {
+    max-width: 100%;
+  }
+  h3 {
+    margin-bottom: 15px;
+}
 }
 
 
@@ -98,6 +159,10 @@
   .changing.swiper-slide-active .img-wrap, .changed.swiper-slide-active .img-wrap {
     transform: scale(3);
   }
+  /* about */
+  #about .about_card {
+    padding: 0 3%;
+  }
 }
 
 
@@ -118,5 +183,11 @@
 
 /*모바일4 아이폰*/
 @media screen and (max-width:375px) {
-
+/* home */
+  .swiper-pagination {
+    width: 80px;
+    margin-top: 7px;
+    left: 35%;
+    bottom: -7%;
+  }
 }
