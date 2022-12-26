@@ -41,6 +41,12 @@
     padding: 6% 0px;
   }
 
+  #home .Home_bg .home_dot img {
+    width: 50%;}
+
+    #home .Home_bg .home_frame img {
+      width: 50%;}
+
   /* about */
   #about {
     height: 93vh;
@@ -266,11 +272,6 @@
 
   #home .home_info {
     margin-bottom: 0;
-  }
-
-  #home .platform_btn {
-    width: 45px;
-    height: 45px;
   }
 
   /* about */

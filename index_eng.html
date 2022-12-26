@@ -34,6 +34,7 @@
   <script src="js/jquery-3.6.1.min.js"></script>
   <script src="js/menu_scroll.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 </head>
 
 
@@ -46,7 +47,7 @@
 
       <hgroup>
 
-        <h1 class="main_logo"><a href="./index.html"><img src="img/main_logo.png" alt="logo"></a></h1>        
+        <h1 class="main_logo"><a href="./index.html"><img src="img/main_logo.png" alt="logo"></a></h1>
         <h1 class="m_logo"><a href="./index.html"><img src="img/main_logo_m.png" alt="logo"></a></h1>
 
       </hgroup>
@@ -140,7 +141,21 @@
 
     <!-- Home 시작 -->
     <section id="home">
-      <div class="Home_bg"></div>
+      <div class="Home_bg" id="scene">
+        <div data-depth="0.5" class="home_dot">
+          <img src="img/dot.png" alt="">
+        </div>
+        <div data-depth="0.3" class="home_frame">
+          <img  src="img/Frame2.png" alt="">
+        </div>
+
+        <script>
+          var scene = document.getElementById('scene');
+          var parallaxInstance = new Parallax(scene);
+        </script>
+
+      </div>
+
 
       <div class="ocean">
         <div class="wave"></div>
@@ -197,7 +212,9 @@
           <div class="bubble"><img src="img/bubble.png" alt=""></div>
           <div class="bubble2"><img src="img/bubble.png" alt=""></div>
           <h1>Marine <br> Boys Club</h1>
-          <p>Marine Boys Club (MRBC) is a marine environment improvement project using blockchain technology. Extraordinary boys who love the sea came to life to save marine life from marine pollution. Head straight to Hear the story of boys unfolding on the seabed.
+          <p>Marine Boys Club (MRBC) is a marine environment improvement project using blockchain technology.
+            Extraordinary boys who love the sea came to life to save marine life from marine pollution. Head straight to
+            Hear the story of boys unfolding on the seabed.
           </p>
         </div>
       </div>
@@ -206,7 +223,7 @@
       <div class="platform_btn">
         <a href="#home" class="scroll"><img src="./img/arrow-up.svg"></img></a>
         <a href="http://mbrc.io/"><i class="xi-market"></i></img></a>
-                <!-- 마켓 버튼 -->
+        <!-- 마켓 버튼 -->
       </div>
 
     </section><!-- Home 끝 -->
@@ -219,7 +236,8 @@
 
           <div class="about_info">
             <h3>ABOUT</h3>
-            <p class="abinfo_title">In the Marine Boys Club, extraordinary boys wear the masks of each marine animal to save the sea and life.</p>
+            <p class="abinfo_title">In the Marine Boys Club, extraordinary boys wear the masks of each marine animal to
+              save the sea and life.</p>
             <p>
               Enjoy the various stories and content they have.
             </p>
@@ -290,9 +308,9 @@
 
           </div>
 
-          
 
-          
+
+
 
           <div class="ablinks">
             <a href="" class="about-btn">View More +</a>
@@ -314,7 +332,12 @@
           <dl>
             <dt>Marin Boys Club</dt>
 
-            <dd>We wanted to take a long-term and systemic movement against pollution of the marine environment. Marine Boys Club is a gathering of people who love and care for the sea and carry out activities to protect the sea environment. We introduce various undersea animals, develop affection for each animal, express oneself by avatarizing the undersea animal that matches the personality of the animal, and support environmental protection activities appropriate to it. The elements and patterns of all undersea animals were produced according to the characteristics and inclinations of each animal.
+            <dd>We wanted to take a long-term and systemic movement against pollution of the marine environment. Marine
+              Boys Club is a gathering of people who love and care for the sea and carry out activities to protect the
+              sea environment. We introduce various undersea animals, develop affection for each animal, express oneself
+              by avatarizing the undersea animal that matches the personality of the animal, and support environmental
+              protection activities appropriate to it. The elements and patterns of all undersea animals were produced
+              according to the characteristics and inclinations of each animal.
             </dd>
           </dl>
         </div>
@@ -333,7 +356,8 @@
               <h4>2022
               </h4>
               <ul>
-                <li>🔹Q2 마린보이클럽 (Marine boys club : MBRC) Teams come together to complete the framework of the worldview and basic characters
+                <li>🔹Q2 마린보이클럽 (Marine boys club : MBRC) Teams come together to complete the framework of the worldview
+                  and basic characters
                 </li>
                 <li>🔹Q3 마린보이클럽(Marine boys club: MBRC) landing page<br>
                   Submitted the first teaser work to Rarible.com, an international NFT marketplace
@@ -351,7 +375,8 @@
                 </li>
                 <li>🔹Q2 Expanding entries in the global NFT marketplace
                 </li>
-                <li>🔹Q3 Character trading and listing on international exchanges through the launch of Marine boys club (MBRC) tokens<br>Release of 500 additional NFTs based on the 1st world view
+                <li>🔹Q3 Character trading and listing on international exchanges through the launch of Marine boys club
+                  (MBRC) tokens<br>Release of 500 additional NFTs based on the 1st world view
 
                 </li>
                 <li>🔹Q4 마린보이클럽(Marine boys club : MBRC) Expansion to the 2nd world view
@@ -367,7 +392,8 @@
 
               <ul>
                 <h4>2024</h4>
-                <li>🔹Q1 마린보이클럽 (Marine boys club: MBRC) Released 300 works with a secondary worldview and supported global fan clubs
+                <li>🔹Q1 마린보이클럽 (Marine boys club: MBRC) Released 300 works with a secondary worldview and supported
+                  global fan clubs
                 </li>
                 <li>🔹Q2 마린보이클럽 (Marine boys club: MBRC) High-level character creation
                 </li>

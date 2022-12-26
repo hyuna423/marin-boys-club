@@ -476,25 +476,24 @@ li.nonhov a:before {
   top: 0;
   left: 0;
 }
-#home .Home_bg::before {
-  content: '';
-  background: url(../img/dot.png) no-repeat;
+
+#home .Home_bg .home_dot, #home .Home_bg .home_frame{
+  width: 100%;
+}
+#home .Home_bg .home_dot img {
   width: 30%;
-  height: 50%;
+  height: auto;
   position: absolute;
   top: 13%;
   left: 3%;
   background-size: contain;
 }
-#home .Home_bg::after {
-  content: '';
-  background: url(../img/Frame2.png) no-repeat;
-  width: 40%;
-  height: 60%;
+#home .Home_bg .home_frame img {
+  width: 30%;
+  height: auto;
   position: absolute;
   top: 0;
-  right: -18%;
-  background-size: contain;
+  right: -13%;
 }
 
 
