@@ -686,7 +686,7 @@ margin: 6px 2px !important;
   width: 60px;
   height: 60px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 166, 255, 0.2);
   border: 1px solid #fff;
   backdrop-filter: blur(2.5px);
   padding: 0.8%;
@@ -707,7 +707,7 @@ margin: 6px 2px !important;
 }
 #home .platform_btn a:hover {
   cursor: pointer;
-  background-color: #1A4899;
+  background-color: #0080ff;
   box-shadow: 0px 2px 30px rgba(0, 0, 45, 0.25);
 }
 #home .platform_btn:hover a {
