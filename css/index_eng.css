@@ -2,9 +2,13 @@
     a{text-decoration : none;}
     address{font-style:normal;}
 
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+      bottom: -35px;
+    }
 
-    #ecosystem .ecosystem_top ol li p {
-      width: 85%;
+    
+  .terms{
+    font-size: 0.8em;
   }
 
     

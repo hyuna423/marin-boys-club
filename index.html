@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>마린보이즈클럽 | Marine Boys Club</title>
 
   <!--meta-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
@@ -32,19 +32,272 @@
   <script src="js/jquery-3.6.1.min.js"></script>
   <script src="js/menu_scroll.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 
 
 <body>
 
+  <header>
+
+    <div class="hd_all container">
+
+      <hgroup>
+
+        <h1><a href="./index.html"><img src="img/main_logo.png" alt="logo"></a></h1>
+
+      </hgroup>
+
+
+      <nav class="pc_menu">
+        <ul class="main_menu">
+
+          <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#about" class="scroll">ABOUT</a></li>
+          <li><a href="#inspiratrions" class="scroll">INSPIRATIONS</a></li>
+          <li><a href="#roadmap" class="scroll">ROADMAP</a></li>
+          <li><a href="#gallery" class="scroll">GALLERY</a></li>
+        </ul>
+        <ul class="login_menu">
+          <li class="login"><a href="">로그인</a></li>
+          <li class="sign"><a href="">회원가입</a></li>
+        </ul>
+
+        <div class="lng">
+          <span href="">KO <i class="xi-caret-down-min"></i></span>
+          <ul class="con">
+            <li><a href="/">Kor</a></li>
+            <li><a href="index_eng.html">Eng</i></a></li>
+          </ul>
+        </div>
+
+
+        <script type="text/javascript">
+          $(document).ready(function () {
+            $(".lng .con").hide();
+            $(".lng").click(function () {
+              $(".con", this).slideToggle("");
+            });
+          });
+        </script>
+
+
+      </nav>
+
+
+      <!--반응형-->
+
+      <div class="m_menu">
+
+        <!-- <img src="img/.png" alt="menu_button"> -->
+        <div class="menu-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </div>
+
+      <nav class="m_menu_wrap">
+
+        <ul>
+
+          <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#about" class="scroll">ABOUT</a></li>
+          <li><a href="#inspiratrions" class="scroll">INSPIRATIONS</a></li>
+          <li><a href="#roadmap" class="scroll">ROADMAP</a></li>
+          <li><a href="#gallery" class="scroll">GALLERY</a></li>
+
+          <div class="login_menu">
+            <div class="line"></div>
+            <li class="login"><a href="">로그인</a></li>
+            <li class="sign"><a href="">회원가입</a></li>
+          </div>
+
+          <a href="./index_eng.html" class="lan_page">Eng &#9660;</a>
+        </ul>
+
+      </nav>
+
+    </div>
+
+    <!--반응형 js-->
+    <script type="text/javascript">
+      $(function () {
+        $(".menu-trigger").click(function () {
+          $(".m_menu_wrap").animate({ width: "toggle" }, 250);
+        });
+      });
+
+    </script>
+
+  </header>
+
   <main>
+
+    <!-- Home 시작 -->
     <section id="home">
-      <!-- <div class="ocean">
+      <div class="Home_bg"></div>
+
+      <div class="ocean">
         <div class="wave"></div>
         <div class="wave"></div>
-      </div> -->
+      </div>
+
+      <div class="Home_wrap">
+
+        <div class="wrap">
+          <div class="swiper-container mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="cont">
+                  <div class="img-wrap">
+                    <img src="img/lv.1/4.MarineAnglerfishBoy.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cont">
+                  <div class="img-wrap">
+                    <img src="img/lv.1/2.MarinePenguinBoy.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cont">
+                  <div class="img-wrap">
+                    <img src="img/lv.1/3.MarineMarlinBoy.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cont">
+                  <div class="img-wrap">
+                    <img src="img/lv.1/5.MarineDumboOctopusBoy.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cont">
+                  <div class="img-wrap">
+                    <img src="img/lv.1/6.MarineBelugaBoy.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="home_info">
+          <div class="bubble"><img src="img/bubble.png" alt=""></div>
+          <div class="bubble2"><img src="img/bubble.png" alt=""></div>
+          <h1>Marine <br> Boys Club</h1>
+          <p>마린보이즈클럽 (MRBC)은 블록체인 기술을 활용한 해양 환경 개선 프로젝트 입니다.
+            바다를 사랑한 비범한 소년들이 해양 오염과 해양 생명들을 구하기 위해 왔습니다.
+            해저에서 펼쳐질 소년들의 이야기를 들어로 바로 떠나보세요.
+          </p>
+        </div>
+      </div>
+
+      <!-- 플랫폼 버튼 -->
+      <div class="platform_btn">
+        <a href="#home" class="scroll"><img src="./img/arrow-up.svg"></img></a>
+        <a href=""><i class="xi-market"></i></img></a>
+        <!-- 마켓 버튼 -->
+
+      </div>
+
+    </section><!-- Home 끝 -->
+
+    <!-- About 시작 -->
+    <section id="about">
+      <div class="about_bg">
+
+        <div class="about_wrap container">
+
+          <div class="about_info">
+            <h3>ABOUT</h3>
+            <p class="abinfo_title">마린보이즈 클럽은 비범한 소년들이 각각의 해양 동물들의 탈을 쓰고
+              바다와 생명을 구하기 위해 활동합니다.</p>
+            <p>
+              그들이 가지고 있는 다양한 이야기와 콘텐츠를 즐겨보세요.
+            </p>
+          </div>
+          <div class="about_card">
+            <div class="abcard">
+              <div class="card_wrap">
+                <img src="img/lv.1/4.MarineAnglerfishBoy.png" alt="">
+                <div class="flex">
+                  <div class="left">
+                    <div class="tit">Marin Boys Club</div>
+                    <div class="code">MRCB#004</div>
+                  </div>
+                  <div class="right flex">
+                    <img src="/img/heart_icon.png" alt="icon">
+                    <span class="tit">815</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="abcard">
+              <div class="card_wrap">
+                <img src="img/lv.1/3.MarineMarlinBoy.png" alt="">
+                <div class="flex">
+                  <div class="left">
+                    <div class="tit">Marin Boys Club</div>
+                    <div class="code">MRCB#003</div>
+                  </div>
+                  <div class="right flex">
+                    <img src="/img/heart_icon.png" alt="icon">
+                    <span class="tit">815</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="abcard">
+              <div class="card_wrap">
+                <img src="img/lv.1/2.MarinePenguinBoy.png" alt="">
+                <div class="flex">
+                  <div class="left">
+                    <div class="tit">Marin Boys Club</div>
+                    <div class="code">MRCB#002</div>
+                  </div>
+                  <div class="right flex">
+                    <img src="/img/heart_icon.png" alt="icon">
+                    <span class="tit">815</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="abcard">
+              <div class="card_wrap">
+                <img src="img/lv.1/1.MarineKillerWhaleBoy.png" alt="">
+                <div class="flex">
+                  <div class="left">
+                    <div class="tit">Marin Boys Club</div>
+                    <div class="code">MRCB#001</div>
+                  </div>
+                  <div class="right flex">
+                    <img src="/img/heart_icon.png" alt="icon">
+                    <span class="tit">815</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="ablinks">
+            <a href="" class="about-btn">View More +</a>
+          </div>
+        </div>
+      </div>
+      <div class="about_line"></div>
+      <!-- <img src="img/line_bg.png"> -->
     </section>
 
     <section id="inspiratrions">
@@ -56,10 +309,16 @@
         <div class="insp_txt">
           <h3>INSPIRATIONS</h3>
           <dl>
-            <dt>마린보이즈 클럽의 탄생 배경 / 영감 디테일 소개</dt>
-            <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis cupiditate earum dolore nostrum ab
-              quas eveniet delectus. Optio molestias dolores exercitationem placeat dolorum blanditiis, id eveniet
-              officia repellat, asperiores fuga.</dd>
+            <dt>마린보이즈 클럽의 탄생 배경</dt>
+
+            <dd>우리는 장기적이고 체계적인 해양 환경 오염에 대한 움직임을 가져가고 싶었습니다.
+              마린보이즈클럽은 바다를 사랑하고 아끼는 사람들이 모여서 함께 바다 환경을 지키기위한
+              활동을 진행합니다.
+              다양한 해저 동물들을 소개하며 각 동물들에 애정을 갖게 하여 활동하는 개성에 맞는
+              해저동물을 아바타화 하여 본인을 표현하고, 그에 맞는 환경 보호 활동을 지원합니다.
+
+              모든 해저 동물들의 요소와 패턴은 각 동물의 특징, 성향에 맞춰 제작하였습니다.
+            </dd>
           </dl>
         </div>
       </div>
@@ -74,22 +333,32 @@
         <div class="road_box">
           <div class="road_card left">
             <div class=" card box1" data-tilt>
-                <h4>0000</h4>
+              <h4>2022
+              </h4>
               <ul>
-                <li>🔹</li>
-                <li>🔹</li>
-                <li>🔹</li>
-                <li>🔹</li>
+                <li>🔹Q2 마린보이클럽 (Marine boys club : MBRC) 팀이 모여 세계관과 기본 캐릭터의 틀을 완료
+                </li>
+                <li>🔹Q3 마린보이클럽 (Marine boys club : MBRC)의 랜딩페이지를 선보임<br>
+                  국제 NFT마켓플레이스 Rarible.com에 첫 티저 작품을 출품
+
+                </li>
+                <li>🔹Q4 마린보이클럽 (Marine boys club : MBRC) SNS 시작 및 전용 마켓플레이스를 출시
+                </li>
               </ul>
             </div>
             <div class="card box2" data-tilt>
-              <h4>0000</h4>
+              <h4>2023</h4>
               <ul>
 
-                <li>🔹</li>
-                <li>🔹</li>
-                <li>🔹</li>
-                <li>🔹</li>
+                <li>🔹Q1 글로벌 NFT경연대회 출품
+                </li>
+                <li>🔹Q2 글로벌 NFT 마켓플레이스 출품확대
+                </li>
+                <li>🔹Q3 마린보이클럽 (Marine boys club : MBRC) 토큰 출시통한 캐릭터 거래 및 국제거래소 상장<br>1차 세계관 기반 NFT 500작품 추가 출시
+
+                </li>
+                <li>🔹Q4 마린보이클럽 (Marine boys club : MBRC) 2차 세계관으로의 확장
+                </li>
               </ul>
 
             </div>
@@ -100,11 +369,11 @@
             <div class="card box3" data-tilt>
 
               <ul>
-                <h4>0000</h4>
-                <li>🔹</li>
-                <li>🔹</li>
-                <li>🔹</li>
-                <li>🔹</li>
+                <h4>2024</h4>
+                <li>🔹Q1 마린보이클럽 (Marine boys club : MBRC) 2차 세계관 작품 300작품 출시 및 글로벌 팬클럽 지원
+                </li>
+                <li>🔹Q2 마린보이클럽 (Marine boys club : MBRC) 상위 캐릭터 제작
+                </li>
               </ul>
 
             </div>
@@ -112,11 +381,11 @@
             <div class="card box4" data-tilt>
 
               <ul>
-                <h4>0000</h4>
-                <li>🔹</li>
-                <li>🔹</li>
-                <li>🔹</li>
-                <li>🔹</li>
+                <h4>2025~</h4>
+                <li>S</li>
+                <li>O</li>
+                <li>O</li>
+                <li>N</li>
               </ul>
 
 
@@ -128,13 +397,154 @@
       </div>
     </section>
 
+
+    <section id="gallery">
+      <div class="glallery_wrap">
+
+        <h3>GALLERY</h3>
+
+        <div class="swiper-container mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/lv.1/1.MarineKillerWhaleBoy.png" alt="Killer Whale">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/2.MarinePenguinBoy.png" alt="Penguin">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/3.MarineMarlinBoy.png" alt="Marlin">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/4.MarineAnglerfishBoy.png" alt="Anglerfish">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/5.MarineDumboOctopusBoy.png" alt="Dumbo Octopus">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/6.MarineBelugaBoy.png" alt="Marine Beluga">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/7.MarineHippocampusBoy.png" alt="Hippocampus">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/8.MarineFlyingFishBoy.png" alt="Flying Fish">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/9.MarineSeaAnemoneBoy.png" alt="Sea Anemone">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/10.MarineOctopusBoy.png" alt="Octopus">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/11.MarineMarkVBoy.png" alt="Mark V">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/12.MarineCrabBoy.png" alt="MarineCrabBoy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/13.MarineWalrusBoy.png" alt="Walrus">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/14.MarineHammerheadSharkBoy.png" alt="Hammerhead">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/15.MarineMantaRayBoy.png" alt="Manta Ray">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/16.MarineTurtleBoy.png" alt="MarineTurtleBoy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/17.MarineBlowfishBoy.png" alt="MarineBlowfishBoy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/18.MarineConchBoy.png" alt="Conch">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/19.MarineSquidBoy.png" alt="MarineSquidBoy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/20.MarineUrchinBoy.png" alt="MarineUrchinBoy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/21.MarineSeashellBoy.png" alt="Seashell">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/22.MarineClownfishBoy.png" alt="Clownfish">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/23.MarineBludTangBoy.png" alt="MarineBludTangBoy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/24.MarineJellyfishBoy.png" alt="MarineJellyfishBoy">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/lv.1/25.MarineStarfishBoy.png" alt="MarineStarfishBoy">
+            </div>
+
+
+
+          </div><!-- swiper-wrapper -->
+
+        </div><!-- swiper-container-->
+
+        <!-- <div class="gallery_button">
+          <button class="gllry_button">
+            <span class="wave_btn"></span>
+            More
+            
+          </button>
+        </div> -->
+
+      </div><!-- glallery_wrap -->
+
+
+
+
+
+
+
+    </section><!-- gallery -->
+
   </main>
 
   <footer>
+    <div class="footer_wrap container">
+      <div class="footer_content">
+        <div class="footer_cont_left">
+          <div class="f_cont_left_logo"><a href="#home"><img src="img/f_logo.png" alt="f_logo"></a></div>
+
+          <div class="f_cont_left_info">
+            <h5>Marin Boys Club</h5>
+            <p class="address"><span>Address</span> : </p>
+            <p class="email"><span>E-mail</span> : </p>
+          </div>
+        </div><!-- footer_cont_left -->
+
+
+        <div class="footer_cont_right">
+          <a href="" class="terms">이용약관</a>
+          <a href="https://twitter.com/MarineBoysClub
+          " class="twitter"><i class="xi-twitter xi-x"></i></a>
+          <a href="" class="kakao"><i class="xi-kakaotalk xi-x"></i></a>
+          <a href="" class="tele"><i class="xi-telegram xi-x"></i></a>
+          <a href="" class="tele"><i class="xi-file-download"></i></a>
+
+        </div>
+      </div><!-- footer_content -->
+    </div><!-- footer_wrap -->
 
   </footer>
-  <script src="js/vanilla-tilt.min.js"></script>
 
+
+
+
+
+
+
+
+  <script src="js/vanilla-tilt.min.js"></script>
+  <script src="js/home_swiper.js"></script>
+  <script src="js/gallery.js"></script>
 </body>
 
 
