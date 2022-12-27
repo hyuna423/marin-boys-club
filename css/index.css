@@ -468,6 +468,10 @@ li.nonhov a:before {
   height: 100vh;
   background: radial-gradient(82.22% 82.22% at 50% 55.56%, #FDFEFF 0%, #9EDAF0 60.16%, #089DF2 100%);
   position: relative;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
 }
 #home .Home_bg {
   content: "";
