@@ -398,7 +398,7 @@ li.nonhov a:before {
   width: 95%;
   display: none;
   position: absolute;
-  top: 120px;
+  top: 66px;
   left: 50%;
   transform: translateX(-50%);
   background: #089DF2;
@@ -471,7 +471,8 @@ li.nonhov a:before {
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select:none;
-  user-select:none
+  user-select:none;
+  overflow: hidden;
 }
 #home .Home_bg {
   content: "";
@@ -1244,6 +1245,7 @@ margin: 6px 2px !important;
   position: relative;
   background-color: #017FC9;
   text-align: center;
+  overflow: hidden;
 }
 #gallery::before{
   content: '';
