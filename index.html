@@ -32,6 +32,8 @@
   <script src="js/jquery-3.6.1.min.js"></script>
   <script src="js/menu_scroll.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
 </head>
 
 
@@ -44,7 +46,8 @@
 
       <hgroup>
 
-        <h1><a href="./index.html"><img src="img/main_logo.png" alt="logo"></a></h1>
+        <h1 class="main_logo"><a href="./index.html"><img src="img/main_logo.png" alt="logo"></a></h1>
+        <h1 class="m_logo"><a href="./index.html"><img src="img/main_logo_m.png" alt="logo"></a></h1>
 
       </hgroup>
 
@@ -137,7 +140,20 @@
 
     <!-- Home 시작 -->
     <section id="home">
-      <div class="Home_bg"></div>
+      <div class="Home_bg" id="scene">
+        <div data-depth="0.5" class="home_dot">
+          <img src="img/dot.png" alt="">
+        </div>
+        <div data-depth="0.3" class="home_frame">
+          <img  src="img/Frame2.png" alt="">
+        </div>
+
+        <script>
+          var scene = document.getElementById('scene');
+          var parallaxInstance = new Parallax(scene);
+        </script>
+
+      </div>
 
       <div class="ocean">
         <div class="wave"></div>
