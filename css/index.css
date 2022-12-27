@@ -30,6 +30,7 @@ address {
 body {
   font-family: 'locus_sangsang';
   overflow-x: hidden;
+
 }
 
 h1{
@@ -723,6 +724,7 @@ margin: 6px 2px !important;
     background-color: #18a3e8;
     position: relative;
     padding: 120px 0;
+
 }
 #about::before {
   content: '';
@@ -846,6 +848,10 @@ margin: 6px 2px !important;
   text-align: left;
   align-items: flex-start;
   line-height:2;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
 }
 
 #about .about_card .abcard .flex .tit{
@@ -1013,6 +1019,10 @@ margin: 6px 2px !important;
   background: linear-gradient(180deg, #01A2FD 0%, #017FC9 100%);
   padding: 10% 0 3% 0;
   position: relative;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
 }
 
 #roadmap::after {
