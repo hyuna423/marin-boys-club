@@ -5,7 +5,10 @@
     transform: scale(3.3);
   }
   #home .home_info {
-    width: 45%;
+    width: 100%;
+  }
+  .home_info {
+    margin-bottom: 5%;
   }
 }
 
@@ -13,24 +16,13 @@
 
 /*노트북*/
 @media screen and (max-width:1024px) {
-  /* header */
-  .pc_menu {
-    width: 100%;
-    float: right;
-  }
   /* home */
-  .home_info h1 {
-    font-size: 4rem;
+  .main_wrap {
+    padding: 0 5%;
+    height: 75%;
   }
-  #home .platform_btn img {
-    padding: 6% 0px;
-  }
-  /* about */
-  #about {
-    height: 93vh;
-  }
-  #about .about_card {
-    padding: 0 10%;
+  #home .main_image::after {
+    width: 60%;
   }
 }
 
@@ -57,42 +49,14 @@
   }
 
   /* home */
-  #home .Home_wrap {
-    flex-direction: column-reverse;
-    justify-content: center;
-    margin-top: 5%;
+  .main_wrap {
+    padding: 0 0 0 5%;
+    height: 75%;
   }
-  #home .Home_wrap {
-    height: 100%;
+  /* inspirations */
+  #inspirations {
+    padding: 20% 0;
   }
-  .swiper-container {
-    height: 350px;
-  }
-
-  .changing.swiper-slide-active .img-wrap, .changed.swiper-slide-active .img-wrap {
-    transform: scale(2.3);
-  }
-  .wrap {
-    width: 80%;
-  }
-
-  #home .home_info {
-    width: 80%;
-    margin-bottom: 2%;
-  }
-  .home_info h1 {
-    text-align: center;
-  }
-  .home_info p {
-    text-align: center;
-  }
-    /* about */
-    #about {
-      height: 82vh;
-    }
-    #about .about_card {
-      padding: 0;
-    }
 }
 
 
@@ -109,32 +73,23 @@
 }
 
   /* home */
-  .swiper-container {
-    height: 350px;
+  .main_wrap {
+    padding: 23% 0 0 5%;
+    flex-direction: column;
   }
-  .changing.swiper-slide-active .img-wrap, .changed.swiper-slide-active .img-wrap {
-    transform: scale(2.7);
+  /* inspirations */
+  .insp_area.container {
+    flex-direction: column;
+    text-align: center;
   }
-  .wrap {
-    width: 80%;
+  #inspirations .insp_area .insp_img, #inspirations .insp_area .insp_txt {
+    width: 78%;
   }
-  #home .home_info {
-    margin-bottom: 0;
+  .insp_area .insp_txt h3 {
+    margin-top: 5%;
   }
-  #home .platform_btn {
-    width: 45px;
-    height: 45px;
-  }
-
-  /* about */
-  #about {
-    height: 72vh;
-  }
-  #about .about_card img {
-    max-width: 100%;
-  }
-  h3 {
-    margin-bottom: 15px;
+  .container, .container-sm {
+    max-width: 740px;
 }
 }
 
@@ -144,24 +99,11 @@
 
 @media screen and (max-width:576px) {
   /* home */
-  #home .home_info {
-    width: 98%;
+  .main_wrap {
+    padding: 40% 0 0 3%;
   }
-  .home_info h1 {
-    font-size: 3.3rem;
-  }
-  .home_info p {
-    font-size: 0.9rem;
-  }
-  .swiper-container {
-    height: 300px;
-  }
-  .changing.swiper-slide-active .img-wrap, .changed.swiper-slide-active .img-wrap {
-    transform: scale(3);
-  }
-  /* about */
-  #about .about_card {
-    padding: 0 3%;
+  #home .main_image::after {
+    width: 100%;
   }
 }
 
@@ -171,23 +113,21 @@
 
 @media screen and (max-width:425px) {
 /* home */
-  .swiper-container {
-    height: 280px;
-  }
-  .changing.swiper-slide-active .img-wrap, .changed.swiper-slide-active .img-wrap {
-    transform: scale(3.8);
-  }
+
 }
 
 
 
 /*모바일4 아이폰*/
 @media screen and (max-width:375px) {
-/* home */
-  .swiper-pagination {
-    width: 80px;
-    margin-top: 7px;
-    left: 35%;
-    bottom: -7%;
+  /* home */
+  .main_wrap {
+    padding: 45% 0 0 3%;
   }
+  /* inspirations */s
+  .insp_area .insp_txt h3 {
+    margin-top: 7%;
+    font-size: 1.6rem;
+  }
+
 }
