@@ -216,6 +216,14 @@
   }
 
 
+  
+  #roadmap::after{
+    left: -20%; 
+    width: 1500px;
+    height: 1500px;
+  }
+
+
   /*footer*/
 
   .footer_content {
@@ -361,6 +369,7 @@
 
 
 
+
 }
 
 
@@ -473,6 +482,11 @@
     width: 160px;
     height: 160px;
   }
+
+  #roadmap::after{
+    left: -80%; 
+  }
+
 
   /*gallery*/
 

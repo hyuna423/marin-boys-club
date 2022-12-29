@@ -1,17 +1,5 @@
-@font-face {
-  font-family: 'netmarbleB';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleB.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  /* 메인 h1 적용 */
-}
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
-@font-face {
-  font-family: 'locus_sangsang';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
 * {
   margin: 0;
@@ -28,9 +16,8 @@ address {
 }
 
 body {
-  font-family: 'locus_sangsang';
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
   overflow-x: hidden;
-
 }
 
 h1{
@@ -515,6 +502,7 @@ li.nonhov a:before {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  z-index: 10;
 }
 
 /* 홈 갤러리 */
@@ -643,40 +631,7 @@ margin: 6px 2px !important;
     text-align: right;
 }
 
-.home_info .bubble {
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* 애니메이션 */
-  animation: bubble 1s linear infinite;
-}
 
-@keyframes bubble{
-  0%,100% {
-    top:-60px;
-  }
-  50%{
-    top:-70px;
-  }
-}
-
-.home_info .bubble2 {
-  position: absolute;
-  bottom: -5%;
-  right: -18%;
-  transform: scaleX(-1);
-  /* 애니메이션 */
-  animation: bubble1 1s linear infinite;
-}
-
-@keyframes bubble1{
-  0%,100% {
-    bottom:-15%;
-  }
-  50%{
-    bottom:-18%;
-  }
-}
 /* platform_btn */
 #home .platform_btn {
   position: fixed;
@@ -724,7 +679,7 @@ margin: 6px 2px !important;
 }
 
 /* about */
-#about {
+/* #about {
     width: 100%;
     background-color: #18a3e8;
     position: relative;
@@ -810,10 +765,10 @@ margin: 6px 2px !important;
   color: #fff;
   font-weight: 100;
   font-size: 0.9rem;
-}
+} */
 
 /* about_card */
-#about .about_card {
+/* #about .about_card {
   display: flex;
   justify-content: space-evenly;
 }
@@ -890,10 +845,10 @@ margin: 6px 2px !important;
   transform: none;
   z-index: 99;
   transform: scale(1.2);
-}
+} */
 
 /* about link */
-#about .ablinks {
+/* #about .ablinks {
   text-align: center;
   margin-top: 7%;
   cursor: pointer;
@@ -914,7 +869,7 @@ margin: 6px 2px !important;
   color: #1A4899;
   text-decoration: none;
 }
-
+ */
 
 /* inspiratrions */
 #inspiratrions {
@@ -1021,7 +976,7 @@ margin: 6px 2px !important;
 
 /* roadmap */
 #roadmap {
-  background: linear-gradient(180deg, #01A2FD 0%, #017FC9 100%);
+  background-color: #141F4A;
   padding: 10% 0 3% 0;
   position: relative;
   -webkit-user-select:none;
@@ -1032,25 +987,15 @@ margin: 6px 2px !important;
 
 #roadmap::after {
   content: '';
-  width: 100%;
-  height: 100%;
-  background: url(../img/bg_grid.png)repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#roadmap::before{
-  content: '';
-  width: 50%;
-  height: 50%;
-  background: url(../img/road_bg.png)no-repeat;
+  width: 1300px;
+  height: 1300px;
+  background: url(../img/rdmp_gradient.png) no-repeat;
   background-size: contain;
   position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 5%;
+  left: 30%;
 }
+
 
 #roadmap .roadmap_area {
   position: relative;
@@ -1066,7 +1011,7 @@ margin: 6px 2px !important;
   content: " ";
   width:50px;
   height:50px;
-  background: url(../img/mrbc_symbol_s.png)no-repeat;
+  background: url(../img/mrbc_symbol_s_new.png) no-repeat;
   position: absolute;
   top: -60px;
   left: 50%;
@@ -1085,19 +1030,7 @@ margin: 6px 2px !important;
   }
 }
 
-#roadmap .roadmap_area h3::before{
-  content: " ";
-  width:71px;
-  height:102px;
-  background: url(../img/bubble.png)no-repeat;
-  position: absolute;
-  top: -110px;
-  left: 52%;
-  transform: scaleX(-1);
 
-  /* 애니메이션 */
-  animation: up 3s linear infinite;
-}
 
 @keyframes up{
   0%,100% {
@@ -1121,6 +1054,7 @@ margin: 6px 2px !important;
 }
 
 #roadmap .road_box .road_card.right{
+  margin-top: 10%;
   margin-bottom: -30px;
 }
 
@@ -1129,26 +1063,28 @@ margin: 6px 2px !important;
 }
 
 #roadmap .road_card .card {
-  background: #fff;
+  background: linear-gradient(#090C19, #000C37);
   box-shadow: 0px 3px 59px 0 rgb(0 0 0 / 10%);
   margin-bottom: 103px;
   padding: 60px 30px;
   width: 100%;
   height: 100%;
   position: relative;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: 0.4s;
   cursor: url(../img/cursor.png), auto;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  color: #fff;
 }
 
 #roadmap .road_card .card:hover{
-  background-color:#222222;
-  color: #fff;
   padding: 60px 30px 205px;
 }
 
+#roadmap .road_card .card.box4:hover{
+  padding: 60px 30px 255px;
+}
 
 #roadmap .road_card .card.box1::before {
   position: absolute;
@@ -1194,7 +1130,10 @@ margin: 6px 2px !important;
   z-index: 99;
   transform: scaleX(-1);
   transition: .5s ease-in-out;
+}
 
+#roadmap .road_card .card.box4{
+  padding: 60px 30px 150px;
 }
 
 #roadmap .road_card .card.box4::before {
@@ -1243,19 +1182,11 @@ margin: 6px 2px !important;
 #gallery {
   width: 100%;
   position: relative;
-  background-color: #017FC9;
+  background-color: #141F4A;
   text-align: center;
   overflow: hidden;
 }
-#gallery::before{
-  content: '';
-  width: 100%;
-  height: 100%;
-  background: url(../img/bg_grid.png)repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+
 
 .glallery_wrap {
   width: 100%;
@@ -1271,8 +1202,9 @@ margin: 6px 2px !important;
   position: absolute;
   left: 0;
   bottom:0;
-  background: url(../img/gallery_bg.png) no-repeat center;
+  background: url(../img/mrbcNft_bg.png) no-repeat center;
   background-size: cover;
+  z-index: 0;
 }
 
 .swiper-container.mySwiper2  {
@@ -1298,12 +1230,14 @@ margin: 6px 2px !important;
   justify-content: center;
   -webkit-align-items: center;
   align-items: center;
-  border: 2px solid white;
-  width: 300px !important;
-  height: 470px !important;
-  background-color: rgba(255,255,255,.3);
+  border: 1px solid #8CB3FF;
+  width: 240px !important;
+  height: 350px !important;
+  background-color: rgba(255,255,255,.2);
   border-radius: 150px;
   overflow: hidden;
+  box-shadow: 0 0 25px #0D4BCF;
+  -webkit-box-shadow: 0 0 25px #0D4BCF;
 }
 
 .mySwiper2 .swiper-slide img{
@@ -1378,7 +1312,7 @@ margin: 6px 2px !important;
 /*footer*/
 
 footer{
-  background-color: #1A3F86;
+  background-color: #020818;
   width: 100%;
   padding: 60px 0;
   color: #fff;
@@ -1392,6 +1326,8 @@ footer{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 10;
 }
 
 .footer_cont_left{
@@ -1449,14 +1385,12 @@ footer{
 
 .footer_cont_right a{
   display: inline-block;
-  background-color: #1A3F86;
+  background-color: rgba(255,255,2555,.1);
   width: 40px;
   height: 40px;
   border-radius: 50%;
   line-height: 40px;
   margin-right: 5%;
-  box-shadow: 0 5px 9px #121212;
-  -webkit-box-shadow: 0 5px 9px #121212;
   transition: all 0.5s;
   color: #fff;
   text-decoration: none;
@@ -1472,6 +1406,256 @@ footer{
 }
 
 .footer_cont_right a:hover{
-  background-color: #0194E4;
-  box-shadow: 0 0 9px #0194E4;
+  background-color: #000e4b;
+  box-shadow: 0 0 9px #01187c;
 }
+
+
+/*bubble*/
+
+
+#background-wrap {
+bottom: 0;
+left: 0;
+position: fixed;
+right: 0;
+top: 0;
+z-index: 0;
+}
+
+
+
+
+@-webkit-keyframes animateBubble {
+  0% {
+      margin-top: 1000px;
+  }
+  100% {
+      margin-top: -100%;
+  }
+}
+
+@-moz-keyframes animateBubble {
+  0% {
+      margin-top: 1000px;
+  }
+  100% {
+      margin-top: -100%;
+  }
+}
+
+@keyframes animateBubble {
+  0% {
+      margin-top: 1000px;
+  }
+  100% {
+      margin-top: -100%;
+  }
+}
+
+@-webkit-keyframes sideWays { 
+  0% { 
+      margin-left:0px;
+  }
+  100% { 
+      margin-left:50px;
+  }
+}
+
+@-moz-keyframes sideWays { 
+  0% { 
+      margin-left:0px;
+  }
+  100% { 
+      margin-left:50px;
+  }
+}
+
+@keyframes sideWays { 
+  0% { 
+      margin-left:0px;
+  }
+  100% { 
+      margin-left:50px;
+  }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+  -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+-moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+left: 10%;
+top: 5%;
+
+-webkit-transform: scale(0.6);
+-moz-transform: scale(0.6);
+transform: scale(0.6);
+}
+
+.x2 {
+  -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+-moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+left: 5%;
+top: 80%;
+
+-webkit-transform: scale(0.4);
+-moz-transform: scale(0.4);
+transform: scale(0.4);
+}
+
+.x3 {
+  -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+-moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+left: 10%;
+top: 40%;
+
+-webkit-transform: scale(0.7);
+-moz-transform: scale(0.7);
+transform: scale(0.7);
+}
+
+.x4 {
+  -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+left: 20%;
+top: 0;
+
+-webkit-transform: scale(0.3);
+-moz-transform: scale(0.3);
+transform: scale(0.3);
+}
+
+.x5 {
+  -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+left: 30%;
+top: 50%;
+
+-webkit-transform: scale(0.5);
+-moz-transform: scale(0.5);
+transform: scale(0.5);
+}
+
+.x6 {
+  -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+-moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+left: -20%;
+top: 0;
+
+-webkit-transform: scale(0.8);
+-moz-transform: scale(0.8);
+transform: scale(0.8);
+}
+
+.x7 {
+  -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+-moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+left: 65%;
+top: 70%;
+
+-webkit-transform: scale(0.4);
+-moz-transform: scale(0.4);
+transform: scale(0.4);
+}
+
+.x8 {
+  -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+
+left: 80%;
+top: 10%;
+
+-webkit-transform: scale(0.3);
+-moz-transform: scale(0.3);
+transform: scale(0.3);
+}
+
+.x9 {
+  -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+
+left: 90%;
+top: 50%;
+
+-webkit-transform: scale(0.6);
+-moz-transform: scale(0.6);
+transform: scale(0.6);
+}
+
+.x10 {
+  -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+-moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
+
+left: 80%;
+top: 80%;
+
+-webkit-transform: scale(0.3);
+-moz-transform: scale(0.3);
+transform: scale(0.3);
+}
+
+/* OBJECTS */
+
+.bubble {
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+-webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), inset 0px 5px 10px 3px rgba(255, 255, 255, 1);
+-moz-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), inset 0px 5px 10px 3px rgba(255, 255, 255, 1);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), inset 0px 5px 10px 3px rgba(255, 255, 255, 1);
+height: 80px;
+position: absolute;
+width: 80px;
+}
+
+
+
+.bubble:after {
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 90%); 
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.1)), color-stop(90%,rgba(255,255,255,0)));
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.1) 0%,rgba(255,255,255,0) 90%); 
+  background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.1) 0%,rgba(255,255,255,0) 90%); 
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.1) 0%,rgba(255,255,255,0) 90%); 
+  background: radial-gradient(ellipse at center,  rgba(255,255,255,0.1) 0%,rgba(255,255,255,0) 90%); 
+/*   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 );  */
+
+
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+
+-webkit-box-shadow: inset 0 10px 30px rgba(255, 255, 255, 0.1);
+-moz-box-shadow: inset 0 10px 30px rgba(255, 255, 255, 0.1);
+box-shadow: inset 0 10px 30px rgba(255, 255, 255, 0.1);
+
+content: "";
+height: 50px;
+left: 10px;
+position: absolute;
+width: px;
+left: 10px;
+top: 10px;
+}
+
+
+
+
+
