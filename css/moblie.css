@@ -2,13 +2,14 @@
 @media screen and (max-width:1440px) {
 
   /* home */
-  .changing.swiper-slide-active .img-wrap,
-  .changed.swiper-slide-active .img-wrap {
+  .changing.swiper-slide-active .img-wrap, .changed.swiper-slide-active .img-wrap {
     transform: scale(3.3);
   }
-
   #home .home_info {
-    width: 45%;
+    width: 100%;
+  }
+  .home_info {
+    margin-bottom: 5%;
   }
 }
 
@@ -17,43 +18,13 @@
 /*노트북*/
 @media screen and (max-width:1024px) {
 
-  /* header */
-  .pc_menu {
-    width: 100%;
-    float: right;
+   /* home */
+   .main_wrap {
+    padding: 0 5%;
+    height: 75%;
   }
-
-  .pc_menu ul.login_menu {
-    width: 17%;
-  }
-
-  /* home */
-  #home {
-    width: 100%;
-    height: 90vh;
-  }
-
-  .home_info h1 {
-    font-size: 4rem;
-  }
-
-  #home .platform_btn img {
-    padding: 6% 0px;
-  }
-
-  #home .Home_bg .home_dot img {
-    width: 50%;}
-
-    #home .Home_bg .home_frame img {
-      width: 50%;}
-
-  /* about */
-  #about {
-    height: 93vh;
-  }
-
-  #about .about_card {
-    padding: 0 10%;
+  #home .main_image::after {
+    width: 60%;
   }
 
   /* roadmap */
@@ -102,101 +73,35 @@
 
 /*아이패드 (768px)*/
 @media screen and (max-width:991px) {
-  .hd_all h1.main_logo{
+   /* 모바일 메뉴 전환 */
+   .pc_menu{
     display: none;
   }
-
-  .hd_all h1.m_logo{
+  .m_menu{
     display: block;
   }
-
-  /* 모바일 메뉴 전환 */
-  .hd_all {
-    height: 60px;
-  }
-  .pc_menu {
-    display: none;
-  }
-
-  .hd_all h1 img {
-    max-width: 80%;
-}
-
-  .m_menu {
-    display: block;
-  }
-
-  .links a.btn-hover {
+  .links a.btn-hover{
     width: 26%;
     padding: 1.5%;
   }
-
-  .m_menu {
-    top: 12px;
-    right: 15px;
+  .m_menu{
+    top: 30%;
   }
-
   .m_menu_wrap {
-    width: 100%;
+    width: 45%;
   }
 
   /* home */
-  #home .Home_wrap {
-    flex-direction: column-reverse;
-    justify-content: center;
-    margin-top: 5%;
+  .main_wrap {
+    padding: 0 0 0 5%;
+    height: 75%;
+  }
+  /* inspirations */
+  #inspirations {
+    padding: 20% 0;
   }
 
-  #home .Home_wrap {
-    height: 100%;
-  }
-
-  .swiper-container {
-    height: 350px;
-  }
-
-  .swiper-container.mySwiper1 {
-    height: 350px;
-  }
-
-  .changing.swiper-slide-active .img-wrap,
-  .changed.swiper-slide-active .img-wrap {
-    transform: scale(2.3);
-  }
-
-  .wrap {
-    width: 80%;
-  }
-
-  #home .home_info {
-    width: 80%;
-    margin-bottom: 2%;
-  }
-
-  .home_info h1 {
-    text-align: center;
-  }
-
-  .home_info p {
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  /* about */
-  #about .about_card .abcard .flex .tit,
-  #about .about_card .abcard .flex .code {
-    font-size: 12px;
-  }
-
-  #about {
-    height: 82vh;
-  }
-
-  #about .about_card {
-    padding: 0;
-  }
-
-
+  /* roadmap */
   #roadmap {
     padding: 27% 0;
   }
@@ -265,86 +170,33 @@
 /*모바일*/
 
 @media screen and (max-width:767px) {
-
-
-
+  /* header */
+  .m_menu_wrap {
+    width: 65%;
+  }
   .m_menu_wrap ul li a {
     font-size: 1.2em;
-    line-height: 3;
-  }
+}
 
   /* home */
-  .swiper-container {
-    height: 350px;
-  }
-
-  .changing.swiper-slide-active .img-wrap,
-  .changed.swiper-slide-active .img-wrap {
-    transform: scale(2.7);
-  }
-
-  .wrap {
-    width: 80%;
-  }
-
-  #home .home_info {
-    margin-bottom: 0;
-  }
-
-  /* about */
-  #about {
-    height: 100vh;
-  }
-
-  #about::before {
-    width: 31%;
-    height: 43%;
-    top: -12%;
-    left: -25%;
-  }
-
-  #about .about_bg::after {
-    width: 52%;
-    height: 50%;
-    bottom: -80px;
-    right: -15%;
-  }
-
-  #about .about_card {
-    flex-wrap: wrap;
-  }
-
-  #about .about_card .abcard:nth-child(1),
-  #about .about_card .abcard:nth-child(2) {
-    margin-bottom: 4%;
-  }
-
-  #about .about_card .abcard {
-    transform: rotate(0) !important;
-    width: 45%;
-  }
-
-  h3 {
-    margin-bottom: 15px;
-  }
-
-  /* inspiratrions*/
-  #inspiratrions .insp_area {
+  .main_wrap {
+    padding: 23% 0 0 5%;
     flex-direction: column;
   }
-
-  #inspiratrions .insp_area .insp_img,
-  #inspiratrions .insp_area .insp_txt {
-    width: 100%;
+  /* inspirations */
+  .insp_area.container {
+    flex-direction: column;
+    text-align: center;
   }
-
-  #inspiratrions .insp_area .insp_img {
-    margin-bottom: 10%;
+  #inspirations .insp_area .insp_img, #inspirations .insp_area .insp_txt {
+    width: 78%;
   }
-
-  #inspiratrions .insp_area .insp_txt {
-    padding-left: 0;
+  .insp_area .insp_txt h3 {
+    margin-top: 5%;
   }
+  .container, .container-sm {
+    max-width: 740px;
+}
 
 
   /* roadmap */
@@ -367,9 +219,6 @@
     transform: translateX(-50%);
   }
 
-
-
-
 }
 
 
@@ -377,104 +226,24 @@
 
 
 @media screen and (max-width:576px) {
-
   /* home */
-  #home {
+  .main_wrap {
+    padding: 40% 0 0 3%;
+  }
+  #home .main_image::after {
     width: 100%;
-    height: 120vh;
-}
-
-  #home .home_info {
-    width: 98%;
-  }
-
-  .home_info .bubble img, .home_info .bubble2 img{
-    max-width: 80%;
-  }
-  
-
-  .home_info h1 {
-    font-size: 3.3rem;
-  }
-
-  .home_info p {
-    font-size: 0.9rem;
-  }
-
-  .swiper-container {
-    height: 300px;
-  }
-
-  .changing.swiper-slide-active .img-wrap,
-  .changed.swiper-slide-active .img-wrap {
-    transform: scale(3);
-  }
-
-  /* about */
-
-  .wrap {
-    width: 127%;
-}
-.mySwiper1 .swiper-slide img {
-  max-width: 76%;}
-
-  #about::before {
-    width: 41%;
-    height: 43%;
-    top: -15%;
-    left: -100%;
-  }
-
-  #about {
-    height: 100%;
-  }
-
-  #about .about_card {
-    padding: 0 3%;
-  }
-
-
-  #about .about_card .abcard:nth-child(1),
-  #about .about_card .abcard:nth-child(2) {
-    margin-bottom: 5%;
-  }
-
-  #about .about_card .abcard {
-    width: 100%;
-    margin-bottom: 5%;
-    padding: 5%
-  }
-
-  #about .about_bg::after {
-    width: 63%;
-    height: 50%;
-    bottom: -457px;
-    right: -98%;
-  }
-
-  /* inspiratrions*/
-
-  #inspiratrions::after {
-    width: 56%;
-    height: 50%;
-    top: -15%;
   }
 
   /* roadmap */
-
   #roadmap .road_card .card h4 {
     width: 33%;
   }
-
   #roadmap {
     padding: 38% 0;
   }
-
   #roadmap::before {
     width: 100%;
   }
-
-
   #roadmap .road_card .card.box1::before,
   #roadmap .road_card .card.box2::before,
   #roadmap .road_card .card.box3::before,
@@ -482,20 +251,16 @@
     width: 160px;
     height: 160px;
   }
-
   #roadmap::after{
     left: -80%; 
   }
 
-
   /*gallery*/
-
   .swiper-container {
     margin-top: 16%;
   }
 
   /*footer*/
-
   .f_cont_left_info {
     margin-bottom: 7%;
   }
@@ -508,27 +273,19 @@
 
 @media screen and (max-width:425px) {
 
-  /* home */
-  .swiper-container {
-    height: 280px;
-  }
-
-  .changing.swiper-slide-active .img-wrap,
-  .changed.swiper-slide-active .img-wrap {
-    transform: scale(3.8);
-  }
 }
 
 
 
 /*모바일4 아이폰*/
 @media screen and (max-width:375px) {
-
   /* home */
-  .swiper-pagination {
-    width: 80px;
-    margin-top: 7px;
-    left: 35%;
-    bottom: -7%;
+  .main_wrap {
+    padding: 45% 0 0 3%;
+  }
+  /* inspirations */s
+  .insp_area .insp_txt h3 {
+    margin-top: 7%;
+    font-size: 1.6rem;
   }
 }

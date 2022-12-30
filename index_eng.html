@@ -47,45 +47,26 @@
 
       <hgroup>
 
-        <h1 class="main_logo"><a href="index_eng.html"><img src="img/main_logo.png" alt="logo"></a></h1>
-        <h1 class="m_logo"><a href="index_eng.html"><img src="img/main_logo_m.png" alt="logo"></a></h1>
+        <h1><a href="./index_eng.html"><img src="img/main_logo.png" alt="logo"></a></h1>
 
       </hgroup>
 
 
       <nav class="pc_menu">
-        <ul class="main_menu">
+        <ul>
 
-          <li><a href="#home" class="scroll">HOME</a></li>
-          <li><a href="#about" class="scroll">ABOUT</a></li>
-          <li><a href="#inspiratrions" class="scroll">INSPIRATIONS</a></li>
+        <div class="menu_p">
+          <li><a href="#home" class="scroll">Home</a></li>
+          <!-- <li><a href="#about" class="scroll">ABOUT</a></li> -->
+          <li><a href="#inspirations" class="scroll">INSPIRATIONS</a></li>
           <li><a href="#roadmap" class="scroll">ROADMAP</a></li>
           <li><a href="#gallery" class="scroll">GALLERY</a></li>
-        </ul>
-        <ul class="login_menu">
-          <li class="login"><a href="">login</a></li>
-          <li class="sign"><a href="">signup</a></li>
-        </ul>
-
-        <div class="lng">
-          <span href="">ENG <i class="xi-caret-down-min"></i></span>
-          <ul class="con">
-            <li><a href="/">Kor</a></li>
-            <li><a href="index_eng.html">Eng</i></a></li>
-          </ul>
         </div>
 
-
-        <script type="text/javascript">
-          $(document).ready(function () {
-            $(".lng .con").hide();
-            $(".lng").click(function () {
-              $(".con", this).slideToggle("");
-            });
-          });
-        </script>
-
-
+          <a href="./index.html" class="lan_page">KOR &#9660;</a>
+        </div>
+        
+      </ul>
       </nav>
 
 
@@ -106,242 +87,86 @@
 
         <ul>
 
-          <li><a href="#home" class="scroll">HOME</a></li>
-          <li><a href="#about" class="scroll">ABOUT</a></li>
-          <li><a href="#inspiratrions" class="scroll">INSPIRATIONS</a></li>
+          <li><a href="#home" class="scroll">Home</a></li>
+          <!-- <li><a href="#about" class="scroll">ABOUT</a></li> -->
+          <li><a href="#inspirations" class="scroll">INSPIRATIONS</a></li>
           <li><a href="#roadmap" class="scroll">ROADMAP</a></li>
           <li><a href="#gallery" class="scroll">GALLERY</a></li>
 
-          <div class="login_menu">
-            <div class="line"></div>
-            <li class="login"><a href="/">login</a></li>
-            <li class="sign"><a href="/">signup</a></li>
-          </div>
-
-          <a href="./index.html" class="lan_page">Ko &#9660;</a>
+          <a href="./index.html" class="lan_page">KOR &#9660;</a>
         </ul>
 
       </nav>
 
     </div>
 
-    <!--반응형 js-->
-    <script type="text/javascript">
-      $(function () {
-        $(".menu-trigger").click(function () {
-          $(".m_menu_wrap").animate({ width: "toggle" }, 250);
+      <!--반응형 js-->
+      <script type="text/javascript">
+        $(function () {
+          $(".menu-trigger").click(function () {
+            $(".m_menu_wrap").animate({ width: "toggle" }, 250);
+          });
         });
-      });
 
-    </script>
+      </script>
 
   </header>
 
   <main>
 
-    <!-- Home 시작 -->
-    <section id="home">
-      <div class="Home_bg" id="scene">
-        <div data-depth="0.5" class="home_dot">
-          <img src="img/dot.png" alt="">
-        </div>
-        <div data-depth="0.3" class="home_frame">
-          <img  src="img/Frame2.png" alt="">
-        </div>
+<!-- Home 시작 -->
+<section id="home">
+  <div class="main_vid">
+    <video autoplay muted loop playsinline>
+      <source src="video/main_vid.mp4" type="video/mp4">
+    </video>
+  </div>
 
-
-
+<div class="main_wrap">
+  <div class="main_area container">
+      <div class="home_info">
+        <img src="img/main_title.svg" class="main_title" alt="title">
+        <p>Marine Boys Club (MRBC) is a marine environment improvement project <br>using blockchain technology.
+          Extraordinary boys who love the sea came to <br>life to save marine life from marine pollution.<br> Head straight to
+          Hear the story of boys unfolding on the seabed.</p>
       </div>
-
-
-      <div class="ocean">
-        <div class="wave"></div>
-        <div class="wave"></div>
+      <div class="links">
+        <a href="" class="home_btn">WHITEPAPER</a>
+        <a href="" class="home_btn">GO MARKET PLACE ></a>
       </div>
+  </div>
 
-      <div class="Home_wrap">
+  <div class="main_image">
+  </div>
+</div>
 
-        <div class="wrap">
-          <div class="swiper-container mySwiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="cont">
-                  <div class="img-wrap">
-                    <img src="img/lv.1/4.MarineAnglerfishBoy.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="cont">
-                  <div class="img-wrap">
-                    <img src="img/lv.1/2.MarinePenguinBoy.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="cont">
-                  <div class="img-wrap">
-                    <img src="img/lv.1/3.MarineMarlinBoy.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="cont">
-                  <div class="img-wrap">
-                    <img src="img/lv.1/5.MarineDumboOctopusBoy.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="cont">
-                  <div class="img-wrap">
-                    <img src="img/lv.1/6.MarineBelugaBoy.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <!-- 플랫폼 버튼 -->
+    <div class="platform_btn">
+      <a href=""><img src="./img/arrow-up.svg"></img></a>
+    </div>
+</section><!-- Home 끝 -->
 
-          <div class="swiper-pagination"></div>
-        </div>
+<!-- inspiratrions 시작 -->
+<section id="inspirations">
+  <div class="insp_area container">
+    <div class="insp_img">
+      <img src="img/svg/7. Marine Hippocampus Boy.gif" alt="Hippocampus_boy">
+    </div>
+    <div class="insp_txt">
+      <h3>INSPIRATIONS</h3>
+        <h5>Marine Boys Club's Background</h5>
 
-        <div class="home_info">
-          <h1>Marine <br> Boys Club</h1>
-          <p>Marine Boys Club (MRBC) is a marine environment improvement project using blockchain technology.
-            Extraordinary boys who love the sea came to life to save marine life from marine pollution. Head straight to
-            Hear the story of boys unfolding on the seabed.
-          </p>
-        </div>
-      </div>
+        <p>We wanted to take a long-term and systemic movement against pollution of the marine environment. Marine
+          Boys Club is a gathering of people who love and care for the sea and carry out activities to protect the
+          sea environment. We introduce various undersea animals, develop affection for each animal, express oneself
+          by avatarizing the undersea animal that matches the personality of the animal, and support environmental
+          protection activities appropriate to it. The elements and patterns of all undersea animals were produced
+          according to the characteristics and inclinations of each animal.</p>
+    </div>
+  </div>
+</section><!-- inspiratrions 끝 -->
 
-      <!-- 플랫폼 버튼 -->
-      <div class="platform_btn">
-        <a href="#home" class="scroll"><img src="./img/arrow-up.svg"></img></a>
-        <a href="http://mbrc.io/"><i class="xi-market"></i></img></a>
-        <!-- 마켓 버튼 -->
-      </div>
-
-    </section><!-- Home 끝 -->
-
-    <!-- About 시작 -->
-<!--     <section id="about">
-      <div class="about_bg">
-
-        <div class="about_wrap container">
-
-          <div class="about_info">
-            <h3>ABOUT</h3>
-            <p class="abinfo_title">In the Marine Boys Club, extraordinary boys wear the masks of each marine animal to
-              save the sea and life.</p>
-            <p>
-              Enjoy the various stories and content they have.
-            </p>
-          </div>
-          <div class="about_card">
-            <div class="abcard">
-              <div class="card_wrap">
-                <img src="img/lv.1/4.MarineAnglerfishBoy.png" alt="">
-                <div class="flex">
-                  <div class="left">
-                    <div class="tit">Marin Boys Club</div>
-                    <div class="code">MRCB#004</div>
-                  </div>
-                  <div class="right flex">
-                    <img src="/img/heart_icon.png" alt="icon">
-                    <span class="tit">815</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="abcard">
-              <div class="card_wrap">
-                <img src="img/lv.1/3.MarineMarlinBoy.png" alt="">
-                <div class="flex">
-                  <div class="left">
-                    <div class="tit">Marin Boys Club</div>
-                    <div class="code">MRCB#003</div>
-                  </div>
-                  <div class="right flex">
-                    <img src="/img/heart_icon.png" alt="icon">
-                    <span class="tit">815</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="abcard">
-              <div class="card_wrap">
-                <img src="img/lv.1/2.MarinePenguinBoy.png" alt="">
-                <div class="flex">
-                  <div class="left">
-                    <div class="tit">Marin Boys Club</div>
-                    <div class="code">MRCB#002</div>
-                  </div>
-                  <div class="right flex">
-                    <img src="/img/heart_icon.png" alt="icon">
-                    <span class="tit">815</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="abcard">
-              <div class="card_wrap">
-                <img src="img/lv.1/1.MarineKillerWhaleBoy.png" alt="">
-                <div class="flex">
-                  <div class="left">
-                    <div class="tit">Marin Boys Club</div>
-                    <div class="code">MRCB#001</div>
-                  </div>
-                  <div class="right flex">
-                    <img src="/img/heart_icon.png" alt="icon">
-                    <span class="tit">815</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-
-
-
-
-
-          <div class="ablinks">
-            <a href="" class="about-btn">View More +</a>
-          </div>
-        </div>
-      </div>
-      <div class="about_line"></div>
-    </section>
-
-    <section id="inspiratrions">
-      <div class="insp_area container">
-        <div class="insp_img">
-          <img src="img/svg/7. Marine Hippocampus Boy.gif" alt="Hippocampus_boy">
-          <span><img src="img/lv.1/9.MarineSeaAnemoneBoy.png" alt="Anemone boy"></span>
-        </div>
-        <div class="insp_txt">
-          <h3>INSPIRATIONS</h3>
-          <dl>
-            <dt>Marin Boys Club</dt>
-
-            <dd>We wanted to take a long-term and systemic movement against pollution of the marine environment. Marine
-              Boys Club is a gathering of people who love and care for the sea and carry out activities to protect the
-              sea environment. We introduce various undersea animals, develop affection for each animal, express oneself
-              by avatarizing the undersea animal that matches the personality of the animal, and support environmental
-              protection activities appropriate to it. The elements and patterns of all undersea animals were produced
-              according to the characteristics and inclinations of each animal.
-            </dd>
-          </dl>
-        </div>
-      </div>
-      <div class="insp_bg">
-      </div>
-    </section>
-
-  -->
-
+<!-- roadmap 시작 -->
     <section id="roadmap">
       <div class="roadmap_area container">
         <h3>ROADMAP</h3>
@@ -421,16 +246,13 @@
                 </li>
               </ul>
 
-
             </div>
-
           </div>
-
         </div>
       </div>
-    </section>
+    </section><!-- roadmap 끝 -->
 
-
+<!-- gallery 시작 -->
     <section id="gallery">
       <div class="glallery_wrap">
 
@@ -530,13 +352,7 @@
 
       </div><!-- glallery_wrap -->
 
-
-
-
-
-
-
-    </section><!-- gallery -->
+    </section><!-- gallery 끝 -->
 
   </main>
 

@@ -46,45 +46,26 @@
 
       <hgroup>
 
-        <h1 class="main_logo"><a href="./index.html"><img src="img/main_logo.png" alt="logo"></a></h1>
-        <h1 class="m_logo"><a href="./index.html"><img src="img/main_logo_m.png" alt="logo"></a></h1>
+        <h1><a href="./index.html"><img src="img/main_logo.png" alt="logo"></a></h1>
 
       </hgroup>
 
 
       <nav class="pc_menu">
-        <ul class="main_menu">
+        <ul>
 
-          <li><a href="#home" class="scroll">HOME</a></li>
-          <li><a href="#about" class="scroll">ABOUT</a></li>
-          <li><a href="#inspiratrions" class="scroll">INSPIRATIONS</a></li>
+        <div class="menu_p">
+          <li><a href="#home" class="scroll">Home</a></li>
+          <!-- <li><a href="#about" class="scroll">ABOUT</a></li> -->
+          <li><a href="#inspirations" class="scroll">INSPIRATIONS</a></li>
           <li><a href="#roadmap" class="scroll">ROADMAP</a></li>
           <li><a href="#gallery" class="scroll">GALLERY</a></li>
-        </ul>
-        <ul class="login_menu">
-          <li class="login"><a href="">로그인</a></li>
-          <li class="sign"><a href="">회원가입</a></li>
-        </ul>
-
-        <div class="lng">
-          <span href="">KO <i class="xi-caret-down-min"></i></span>
-          <ul class="con">
-            <li><a href="/">Kor</a></li>
-            <li><a href="index_eng.html">Eng</i></a></li>
-          </ul>
         </div>
 
-
-        <script type="text/javascript">
-          $(document).ready(function () {
-            $(".lng .con").hide();
-            $(".lng").click(function () {
-              $(".con", this).slideToggle("");
-            });
-          });
-        </script>
-
-
+          <a href="./index_eng.html" class="lan_page">ENG &#9660;</a>
+        </div>
+        
+      </ul>
       </nav>
 
 
@@ -105,239 +86,88 @@
 
         <ul>
 
-          <li><a href="#home" class="scroll">HOME</a></li>
-          <li><a href="#about" class="scroll">ABOUT</a></li>
-          <li><a href="#inspiratrions" class="scroll">INSPIRATIONS</a></li>
+          <li><a href="#home" class="scroll">Home</a></li>
+          <!-- <li><a href="#about" class="scroll">ABOUT</a></li> -->
+          <li><a href="#inspirations" class="scroll">INSPIRATIONS</a></li>
           <li><a href="#roadmap" class="scroll">ROADMAP</a></li>
           <li><a href="#gallery" class="scroll">GALLERY</a></li>
 
-          <div class="login_menu">
-            <div class="line"></div>
-            <li class="login"><a href="">로그인</a></li>
-            <li class="sign"><a href="">회원가입</a></li>
-          </div>
-
-          <a href="./index_eng.html" class="lan_page">Eng &#9660;</a>
+          <a href="./index_eng.html" class="lan_page">ENG &#9660;</a>
         </ul>
 
       </nav>
 
     </div>
 
-    <!--반응형 js-->
-    <script type="text/javascript">
-      $(function () {
-        $(".menu-trigger").click(function () {
-          $(".m_menu_wrap").animate({ width: "toggle" }, 250);
+      <!--반응형 js-->
+      <script type="text/javascript">
+        $(function () {
+          $(".menu-trigger").click(function () {
+            $(".m_menu_wrap").animate({ width: "toggle" }, 250);
+          });
         });
-      });
 
-    </script>
+      </script>
 
   </header>
 
   <main>
 
-    <!-- Home 시작 -->
-    <section id="home">
-      <div class="Home_bg" id="scene">
-        <div data-depth="0.5" class="home_dot">
-          <img src="img/dot.png" alt="">
-        </div>
-        <div data-depth="0.3" class="home_frame">
-          <img  src="img/Frame2.png" alt="">
-        </div>
+<!-- Home 시작 -->
+<section id="home">
+  <div class="main_vid">
+    <video autoplay muted loop playsinline>
+      <source src="video/main_vid.mp4" type="video/mp4">
+    </video>
+  </div>
 
-
+<div class="main_wrap">
+  <div class="main_area container">
+      <div class="home_info">
+        <img src="img/main_title.svg" class="main_title" alt="title">
+        <p>마린보이즈클럽 (MRBC)은 블록체인 기술을 활용한 해양 환경 개선 프로젝트 입니다.<br>
+          바다를 사랑한 비범한 소년들이 해양 오염과 해양 생명들을 구하기 위해 왔습니다.<br>
+          해저에서 펼쳐질 소년들의 이야기를 들으러 바로 떠나보세요.</p>
       </div>
-
-      <div class="ocean">
-        <div class="wave"></div>
-        <div class="wave"></div>
+      <div class="links">
+        <a href="" class="home_btn">WHITEPAPER</a>
+        <a href="" class="home_btn">GO MARKET PLACE ></a>
       </div>
+  </div>
 
-      <div class="Home_wrap">
+  <div class="main_image">
+  </div>
+</div>
 
-        <div class="wrap">
-          <div class="swiper-container mySwiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="cont">
-                  <div class="img-wrap">
-                    <img src="img/lv.1/4.MarineAnglerfishBoy.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="cont">
-                  <div class="img-wrap">
-                    <img src="img/lv.1/2.MarinePenguinBoy.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="cont">
-                  <div class="img-wrap">
-                    <img src="img/lv.1/3.MarineMarlinBoy.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="cont">
-                  <div class="img-wrap">
-                    <img src="img/lv.1/5.MarineDumboOctopusBoy.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="cont">
-                  <div class="img-wrap">
-                    <img src="img/lv.1/6.MarineBelugaBoy.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <!-- 플랫폼 버튼 -->
+    <div class="platform_btn">
+      <a href=""><img src="./img/arrow-up.svg"></img></a>
+    </div>
+</section><!-- Home 끝 -->
 
-          <div class="swiper-pagination"></div>
-        </div>
+<!-- inspiratrions 시작 -->
+<section id="inspirations">
+  <div class="insp_area container">
+    <div class="insp_img">
+      <img src="img/svg/7. Marine Hippocampus Boy.gif" alt="Hippocampus_boy">
+    </div>
+    <div class="insp_txt">
+      <h3>INSPIRATIONS</h3>
+        <h5>마린보이즈 클럽의 탄생 배경</h5>
 
-        <div class="home_info">
-      
-          <h1>Marine <br> Boys Club</h1>
-          <p>마린보이즈클럽 (MRBC)은 블록체인 기술을 활용한 해양 환경 개선 프로젝트 입니다.
-            바다를 사랑한 비범한 소년들이 해양 오염과 해양 생명들을 구하기 위해 왔습니다.
-            해저에서 펼쳐질 소년들의 이야기를 들으러 바로 떠나보세요.
-          </p>
-        </div>
-      </div>
+        <p>우리는 장기적이고 체계적인 해양 환경 오염에 대한 움직임을 가져가고 싶었습니다.<br>
+          마린보이즈클럽은 바다를 사랑하고 아끼는 사람들이 모여서 함께 바다 환경을 지키기위한
+          활동을 진행합니다.
+          다양한 해저 동물들을 소개하며 각 동물들에 애정을 갖게 하여 활동하는 개성에 맞는
+          해저동물을 아바타화 하여 본인을 표현하고, 그에 맞는 환경 보호 활동을 지원합니다.
 
-      <!-- 플랫폼 버튼 -->
-      <div class="platform_btn">
-        <a href="#home" class="scroll"><img src="./img/arrow-up.svg"></img></a>
-        <a href="http://mbrc.io/"><i class="xi-market"></i></img></a>
-        <!-- 마켓 버튼 -->
+          모든 해저 동물들의 요소와 패턴은 각 동물의 특징, 성향에 맞춰 제작하였습니다.
+        </p>
+    </div>
+  </div>
+</section><!-- inspiratrions 끝 -->    
 
-      </div>
-
-    </section><!-- Home 끝 -->
-
-    <!-- About 시작 -->
-<!--     <section id="about">
-      <div class="about_bg">
-
-        <div class="about_wrap container">
-
-          <div class="about_info">
-            <h3>ABOUT</h3>
-            <p class="abinfo_title">마린보이즈 클럽은 비범한 소년들이 각각의 해양 동물들의 탈을 쓰고
-              바다와 생명을 구하기 위해 활동합니다.</p>
-            <p>
-              그들이 가지고 있는 다양한 이야기와 콘텐츠를 즐겨보세요.
-            </p>
-          </div>
-          <div class="about_card">
-            <div class="abcard">
-              <div class="card_wrap">
-                <img src="img/lv.1/4.MarineAnglerfishBoy.png" alt="">
-                <div class="flex">
-                  <div class="left">
-                    <div class="tit">Marin Boys Club</div>
-                    <div class="code">MRCB#004</div>
-                  </div>
-                  <div class="right flex">
-                    <img src="/img/heart_icon.png" alt="icon">
-                    <span class="tit">815</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="abcard">
-              <div class="card_wrap">
-                <img src="img/lv.1/3.MarineMarlinBoy.png" alt="">
-                <div class="flex">
-                  <div class="left">
-                    <div class="tit">Marin Boys Club</div>
-                    <div class="code">MRCB#003</div>
-                  </div>
-                  <div class="right flex">
-                    <img src="/img/heart_icon.png" alt="icon">
-                    <span class="tit">815</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="abcard">
-              <div class="card_wrap">
-                <img src="img/lv.1/2.MarinePenguinBoy.png" alt="">
-                <div class="flex">
-                  <div class="left">
-                    <div class="tit">Marin Boys Club</div>
-                    <div class="code">MRCB#002</div>
-                  </div>
-                  <div class="right flex">
-                    <img src="/img/heart_icon.png" alt="icon">
-                    <span class="tit">815</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="abcard">
-              <div class="card_wrap">
-                <img src="img/lv.1/1.MarineKillerWhaleBoy.png" alt="">
-                <div class="flex">
-                  <div class="left">
-                    <div class="tit">Marin Boys Club</div>
-                    <div class="code">MRCB#001</div>
-                  </div>
-                  <div class="right flex">
-                    <img src="/img/heart_icon.png" alt="icon">
-                    <span class="tit">815</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-
-          <div class="ablinks">
-            <a href="" class="about-btn">View More +</a>
-          </div>
-        </div>
-      </div>
-      <div class="about_line"></div>
-
-    </section>
-
-    <section id="inspiratrions">
-      <div class="insp_area container">
-        <div class="insp_img">
-          <img src="img/svg/7. Marine Hippocampus Boy.gif" alt="Hippocampus_boy">
-          <span><img src="img/lv.1/9.MarineSeaAnemoneBoy.png" alt="Anemone boy"></span>
-        </div>
-        <div class="insp_txt">
-          <h3>INSPIRATIONS</h3>
-          <dl>
-            <dt>마린보이즈 클럽의 탄생 배경</dt>
-
-            <dd>우리는 장기적이고 체계적인 해양 환경 오염에 대한 움직임을 가져가고 싶었습니다.
-              마린보이즈클럽은 바다를 사랑하고 아끼는 사람들이 모여서 함께 바다 환경을 지키기위한
-              활동을 진행합니다.
-              다양한 해저 동물들을 소개하며 각 동물들에 애정을 갖게 하여 활동하는 개성에 맞는
-              해저동물을 아바타화 하여 본인을 표현하고, 그에 맞는 환경 보호 활동을 지원합니다.
-
-              모든 해저 동물들의 요소와 패턴은 각 동물의 특징, 성향에 맞춰 제작하였습니다.
-            </dd>
-          </dl>
-        </div>
-      </div>
-      <div class="insp_bg">
-
-      </div>
-    </section> -->
-
+<!-- roadmap 시작 -->
     <section id="roadmap">
       <div class="roadmap_area container">
         <h3>ROADMAP</h3>
@@ -416,16 +246,13 @@
                 </li>
               </ul>
 
-
             </div>
-
           </div>
-
         </div>
       </div>
-    </section>
+    </section><!-- roadmap 끝 -->
 
-
+<!-- gallery 시작 -->
     <section id="gallery">
       <div class="glallery_wrap">
 
@@ -524,14 +351,7 @@
         </div> -->
 
       </div><!-- glallery_wrap -->
-
-
-
-
-
-
-
-    </section><!-- gallery -->
+    </section><!-- gallery 끝 -->
 
   </main>
 
