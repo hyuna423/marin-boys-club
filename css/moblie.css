@@ -96,6 +96,11 @@
     padding: 0 0 0 5%;
     height: 75%;
   }
+
+  #home .main_image::after {
+    width: 70%;
+  }
+
   /* inspirations */
   #inspirations {
     padding: 20% 0;
@@ -183,6 +188,11 @@
     padding: 23% 0 0 5%;
     flex-direction: column;
   }
+
+  #home .main_image::after {
+    width: 85%;
+  }
+
   /* inspirations */
   .insp_area.container {
     flex-direction: column;
@@ -190,6 +200,8 @@
   }
   #inspirations .insp_area .insp_img, #inspirations .insp_area .insp_txt {
     width: 78%;
+    position: relative;
+    z-index: 10;
   }
   .insp_area .insp_txt h3 {
     margin-top: 5%;
@@ -198,6 +210,13 @@
     max-width: 740px;
 }
 
+  .insp_txt br {
+  display:  none;
+}
+
+  #inspirations::after {
+    display: none;
+  }
 
   /* roadmap */
   #roadmap .road_card .card h4 {
@@ -227,6 +246,11 @@
 
 @media screen and (max-width:576px) {
   /* home */
+
+  #home{
+    height: 900px;
+  }
+
   .main_wrap {
     padding: 40% 0 0 3%;
   }
