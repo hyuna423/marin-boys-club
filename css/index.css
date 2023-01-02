@@ -283,7 +283,7 @@ h3 {
   height: 10%;
   background: linear-gradient(180deg, #141A38 11.46%, rgba(3, 32, 62, 0) 100%);
   transform: rotate(-180deg);
-  z-index: 300;
+  z-index: 0;
   bottom: 0;
   right: 0;
 }
@@ -401,10 +401,9 @@ img.main_boy {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow-x: visible;
   padding: 10% 0;
   background-color: #141A38;
-
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select:none;
@@ -415,11 +414,12 @@ img.main_boy {
   clear: both;
   background: url(../img/insp_bg.png)no-repeat left;
   width: 100%;
-  height: 50%;
+  height: 100%;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -20%;
+  left: -20%;
   background-size: contain;
+  z-index: 2;
 }
 .insp_txt{
   color: #fff;
@@ -442,11 +442,14 @@ img.main_boy {
   bottom: 0;
   left: 0;
   background-size: contain;
+  z-index: 0;
 }
 #inspirations .insp_area {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  z-index: 8;
 }
 #inspirations .insp_area .insp_img,
 #inspirations .insp_area .insp_txt {
