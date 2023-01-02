@@ -193,7 +193,7 @@ h3 {
   }
   .m_menu{
     display: none;
-    position: fixed;
+    position: absolute;
     right: 10%;
     top: 6%;
     z-index:50;
@@ -466,7 +466,7 @@ img.main_boy {
 
 /* roadmap */
 #roadmap {
-  background-color: #141F4A;
+  background-color: #141A38;
   padding: 10% 0 3% 0;
   position: relative;
   -webkit-user-select:none;
@@ -672,7 +672,7 @@ img.main_boy {
 #gallery {
   width: 100%;
   position: relative;
-  background-color: #141F4A;
+  background-color: #141A38;
   text-align: center;
   overflow: hidden;
 }
@@ -1100,3 +1100,32 @@ top: 10px;
 
 
 
+/* 홍보 영상 */
+.mrbc_video_pop {
+  position: absolute;
+  top: 65%;
+  left: 3%;
+  z-index: 97;
+  display: inline-block;
+}
+.video_box {
+  position: relative;
+}
+.mrbc_video_pop .xi-close-thin {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -5px;
+  right: -40px;
+  font-size: 2rem;
+  border: none;
+  outline:none;
+
+  transition: all 0.3s ease-in-out;
+}
+.mrbc_video_pop .xi-close-thin:hover {
+  color: rgba(255, 255, 255, 0.4);
+}
